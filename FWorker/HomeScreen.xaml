@@ -6,7 +6,39 @@
              xmlns:local="clr-namespace:FWorker"
              mc:Ignorable="d" 
              d:DesignHeight="939" d:DesignWidth="1161">
-    <Grid>
-            
+    <Grid x:Name="gridHomeScreen" Background="White">
+        <Grid x:Name="gridService" Height="600" VerticalAlignment="Top">
+            <Grid x:Name="gridLabelService" Height="100" VerticalAlignment="Top">
+                <Grid x:Name="gridLabel" Width="450" HorizontalAlignment="Left" Margin="50,0,0,0">
+                    <Border Background="#FFBA00" Margin="-26,16,466,22" RenderTransformOrigin="0.5,0.5">
+                        <Border.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="1"/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Border.RenderTransform>
+                    </Border>
+                    <Label Content="Dịch Vụ" FontSize="48" FontFamily="Bahnschrift" Margin="-11,0,0,0" VerticalAlignment="Center" />
+                </Grid>
+                <Grid x:Name="btnWatchMore" Width="600" HorizontalAlignment="Right">
+                    <Button Content="Xem thêm" Margin="356,25,64,34" FontSize="20" >
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="10" Background="LightGray" Opacity="0.5">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+            </Grid>
+            <Grid Height="500" VerticalAlignment="Bottom">
+                
+            </Grid>
+        </Grid>
     </Grid>
+
+
 </UserControl>
