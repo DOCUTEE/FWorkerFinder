@@ -16,22 +16,22 @@ using System.Windows.Shapes;
 namespace FWorker
 {
     /// <summary>
-    /// Interaction logic for HomeScreen.xaml
+    /// Interaction logic for UCService.xaml
     /// </summary>
-    public partial class HomeScreen : Page
+    public partial class UCService : UserControl
     {
-        public HomeScreen()
+        string path;
+
+        public string Path { get => path; set => path = value; }
+
+        public UCService(string path)
         {
             InitializeComponent();
+            this.Path = path;
         }
-        //write a function to show 10 services option in 10 part of ServiceContainer Grid
-        private void ShowServices()
+        public UCService()
         {
-            
-        }
-        private void ButtonShowMore_Click(object sender, RoutedEventArgs e)
-        {
-
+            InitializeComponent();
         }
     }
 }
