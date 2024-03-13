@@ -7,17 +7,22 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="1024" Width="1440" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
     <Grid x:Name="mainWindow" Height="1024" VerticalAlignment="Top" Width="1440" HorizontalAlignment="Center">
-        <Grid x:Name="gridSideBar" Height="1024" Width="269" HorizontalAlignment="Left" Background ="#FFBE22" VerticalAlignment="Center" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="269"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="gridSideBar" Grid.Row="0"  Background ="#FFBE22" />
+        <Grid Grid.Column ="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="gridSearchBar" Grid.Row="0" >
 
-        </Grid>
-        <Grid x:Name="gridSearchBar" Height="100" Width="1171" VerticalAlignment ="Top" HorizontalAlignment="Right">
+            </Grid>
+            <Grid x:Name="gridContext" Grid.Row="1">
 
-        </Grid>
-        <Grid x:Name="gridContext" Height="924" Width="1171" VerticalAlignment="Bottom" HorizontalAlignment="Right">
-            
+            </Grid>
         </Grid>
     </Grid>
-
-
-
 </Window>
