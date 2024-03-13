@@ -18,10 +18,10 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <Grid x:Name="gridSearchBar" Grid.Row="0" >
-
+                
             </Grid>
             <Grid x:Name="gridContext" Grid.Row="1">
-
+                <Frame Source="HomeScreen.xaml"/>
             </Grid>
         </Grid>
     </Grid>
