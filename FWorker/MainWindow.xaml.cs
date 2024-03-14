@@ -72,6 +72,11 @@ namespace FWorker
                 default:
                     return "Trang chủ";
             }
-        }   
+        }
+
+        private void txtCustomerName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

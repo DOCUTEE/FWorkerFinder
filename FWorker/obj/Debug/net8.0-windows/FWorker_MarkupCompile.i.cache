@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\win\FWorker\obj\Debug\net8.0-windows\
+C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\
 FWorker
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\win\FWorker\App.xaml
-71858492687
+C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\App.xaml
+9-1747461837
 
-12500033114
+142059144499
 1981451641563
-Account.xaml;Booking.xaml;CustomerService.xaml;History.xaml;HomeScreen.xaml;MainWindow.xaml;Tips.xaml;
+Account.xaml;Booking.xaml;ButtonSideBar.xaml;CustomerService.xaml;History.xaml;HomeScreen.xaml;MainWindow.xaml;ServiceCard.xaml;Tips.xaml;
 
 False
 

@@ -53,7 +53,7 @@ namespace FWorker {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FWorker;V1.0.0.0;component/customerservice.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FWorker;component/customerservice.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\CustomerService.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
