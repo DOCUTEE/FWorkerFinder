@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +18,22 @@ namespace FWorker
     /// <summary>
     /// Interaction logic for Booking.xaml
     /// </summary>
-    public partial class Booking : UserControl
+    public partial class Booking : Page
     {
         public Booking()
         {
             InitializeComponent();
         }
+
+        private void txtCustomerName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
+
