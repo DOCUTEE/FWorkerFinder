@@ -1,0 +1,9 @@
+D:\win\FWorker\obj\Debug\net8.0-windows\Booking.g.cs
+D:\win\FWorker\obj\Debug\net8.0-windows\CustomerService.g.cs
+D:\win\FWorker\obj\Debug\net8.0-windows\History.g.cs
+D:\win\FWorker\obj\Debug\net8.0-windows\HomeScreen.g.cs
+D:\win\FWorker\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\win\FWorker\obj\Debug\net8.0-windows\Tips.g.cs
+D:\win\FWorker\obj\Debug\net8.0-windows\App.g.cs
+D:\win\FWorker\obj\Debug\net8.0-windows\FWorker_MarkupCompile.cache
+D:\win\FWorker\obj\Debug\net8.0-windows\FWorker_MarkupCompile.lref
