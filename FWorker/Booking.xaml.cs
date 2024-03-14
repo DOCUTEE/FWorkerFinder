@@ -27,7 +27,7 @@ namespace FWorker
 
         private void txtCustomerName_TextChanged(object sender, TextChangedEventArgs e)
         {
-
+            
         }
     }
 }

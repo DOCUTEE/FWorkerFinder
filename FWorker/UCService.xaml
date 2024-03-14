@@ -7,12 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="159.75" d:DesignWidth="193.95">
     <Grid>
-        <!-- this user control is contain 1 picture. and the name picture will be get from parameter-->
-        <Border Name="hej1">
-            <Border.Background>
-                <ImageBrush ImageSource="DOCUTE.jpg"  Stretch="None"/>
-            </Border.Background>
+        <Border CornerRadius="10">
+            <Label Content="Dịch vụ sơn nhà" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontFamily="Bahnschrift" Opacity="0.5" FontSize="16"></Label>
         </Border>
-
+        <Image Source="C:\Users\Docute\Desktop\WIN\FWorker\FWorker\Picture\image1.png" Stretch="none" ></Image>
     </Grid>
+        
 </UserControl>

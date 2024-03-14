@@ -24,12 +24,20 @@ namespace FWorker
         {
             InitializeComponent();
         }
+
+        
+
         //write a function to show 10 services option in 10 part of ServiceContainer Grid
         private void ShowServices()
         {
             
         }
         private void ButtonShowMore_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ServiceCard1_Loaded(object sender, RoutedEventArgs e)
         {
 
         }
