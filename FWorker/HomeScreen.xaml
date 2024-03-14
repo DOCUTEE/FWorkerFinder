@@ -74,11 +74,12 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Column="1" Grid.Row="1" >
-                <!-- Add image1.png into grid-->
-                <local:UCService x:Name="ServiceCard1"></local:UCService>
-                
-            </Grid>
+            
+        </Grid>
+        <Grid Grid.Row="3">
+            
+
+
         </Grid>
     </Grid>
 
