@@ -18,7 +18,7 @@ namespace FWorker
     /// <summary>
     /// Interaction logic for HomeScreen.xaml
     /// </summary>
-    public partial class HomeScreen : UserControl
+    public partial class HomeScreen : Page
     {
         public HomeScreen()
         {

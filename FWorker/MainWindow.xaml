@@ -21,7 +21,7 @@
                 
             </Grid>
             <Grid x:Name="gridContext" Grid.Row="1">
-                <Frame Source="HomeScreen.xaml"/>
+                <Frame Source="Tips.xaml"/>
             </Grid>
         </Grid>
     </Grid>
