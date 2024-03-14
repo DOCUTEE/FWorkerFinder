@@ -6,7 +6,17 @@
              xmlns:local="clr-namespace:FWorker"
              mc:Ignorable="d" 
              d:DesignHeight="939" d:DesignWidth="1161">
-    <Grid>
-        <Border></Border>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
     </Grid>
 </UserControl>
