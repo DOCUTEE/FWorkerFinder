@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +18,7 @@ namespace FWorker
     /// <summary>
     /// Interaction logic for History.xaml
     /// </summary>
-    public partial class History : UserControl
+    public partial class History : Page
     {
         public History()
         {
