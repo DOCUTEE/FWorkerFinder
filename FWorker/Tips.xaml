@@ -7,7 +7,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="924" d:DesignWidth="1171">
     <ScrollViewer VerticalScrollBarVisibility="Auto">
-
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="24"/>
@@ -21,34 +20,93 @@
 
             </Grid.RowDefinitions>
 
-            <Border Grid.Row="1" Margin="30,0,30,0" Width="1094" Height="277" Background="LightGray" CornerRadius="15">
-                <Grid>
+            <Grid ShowGridLines="True" Grid.Row="1">
 
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="80"/>
-                        <RowDefinition Height="177"/>
-                    </Grid.RowDefinitions>
-                    <Grid Grid.Row="1">
-                        <Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid ShowGridLines="True" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="197"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid  Grid.Column="0">
+
+                        <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="UniformToFill" Source="Image/Huy.jpg"/>
+
+                    </Grid>
+                </Grid>
+            </Grid>
+
+            <Grid ShowGridLines="True" Grid.Row="3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid ShowGridLines="True" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="197"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid  Grid.Column="0">
+                        <Image HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="UniformToFill" Source="Image/Quang.jpg"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid ShowGridLines="True" Grid.Row="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid ShowGridLines="True" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="197"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Image  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="UniformToFill" Source="Image/Thinh.jpg"/>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+
+
+    </ScrollViewer>
+</Page>
+<!--<Border Grid.Row="1" Margin="30,0,30,0" Width="1094" Height="277" Background="LightGray" CornerRadius="15"/>-->
+<!--<Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>-->
+
+<!--<Grid Grid.Row ="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="500"/>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                </Grid>-->
+<!--</Grid>-->
+
+<!--<Grid.ColumnDefinitions>
                             <ColumnDefinition Width="177"/>
                             
                         </Grid.ColumnDefinitions>
-                        <Border Grid.Column="0" Margin="10,0,0,0" Background="LightYellow" CornerRadius="15"/>
-                    </Grid>
-                    <!--<TextBlock Grid.Row="0" FontFamily="bahnschrift" FontSize="30" Text="Title" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Border Grid.Column="0" Margin="10,0,0,0" Background="LightYellow" CornerRadius="15"/>-->
+
+<!--<TextBlock Grid.Row="0" FontFamily="bahnschrift" FontSize="30" Text="Title" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <TextBlock Grid.Row="1" FontFamily="bahnschrift" FontSize="20" Text="Hello World!!!!!!!!!!!!!!" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
-                    <TextBlock Grid.Row ="0" Name="textBlockName1" FontFamily="bahnschrift" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <TextBlock Grid.Row ="1" Name="textBlockJob1" FontFamily="bahnschrift" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <!--<Image Grid.Row="1" Grid.Column="0" Name="ava1" Width="100" Height="100"/>-->
-                    <Image Grid.Row="1" Grid.Column="1" Name="ava1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="UniformToFill"/>
-                    
+<!--<TextBlock Grid.Row ="0" Name="textBlockName1" FontFamily="bahnschrift" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row ="1" Name="textBlockJob1" FontFamily="bahnschrift" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
+<!--<Image Grid.Row="1" Grid.Column="0" Name="ava1" Width="100" Height="100"/>-->
+<!--<Image Grid.Row="1" Grid.Column="1" Name="ava1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="UniformToFill"/>-->
 
 
 
-                </Grid>
-            </Border>
 
-            <Border Grid.Row="3" Margin="30,0,30,0" Width="1094" Height="277" Background="LightGray" CornerRadius="15">
+
+<!--<Border Grid.Row="3" Margin="30,0,30,0" Width="1094" Height="277" Background="LightGray" CornerRadius="15">
                 <Grid>
 
                     <Grid.RowDefinitions>
@@ -61,10 +119,10 @@
 
                         </Grid.ColumnDefinitions>
                         <Border Grid.Column="0" Margin="10,0,0,0" Background="LightYellow" CornerRadius="15"/>
-                    </Grid>
-                    <!--<TextBlock Grid.Row="0" FontFamily="bahnschrift" FontSize="30" Text="Title" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>-->
+<!--<TextBlock Grid.Row="0" FontFamily="bahnschrift" FontSize="30" Text="Title" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <TextBlock Grid.Row="1" FontFamily="bahnschrift" FontSize="20" Text="Hello World!!!!!!!!!!!!!!" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
-                    <TextBlock Grid.Row ="0" Name="textBlockName2" FontFamily="bahnschrift" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+<!--<TextBlock Grid.Row ="0" Name="textBlockName2" FontFamily="bahnschrift" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <TextBlock Grid.Row ="1" Name="textBlockJob2" FontFamily="bahnschrift" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <Image Grid.Row="1" Grid.Column="0" Name="ava2"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="UniformToFill"/>
                 </Grid>
@@ -83,21 +141,20 @@
 
                         </Grid.ColumnDefinitions>
                         <Border Grid.Column="0" Margin="10,0,0,0" Background="LightYellow" CornerRadius="15"/>
-                    </Grid>
-                    <!--<TextBlock Grid.Row="0" FontFamily="bahnschrift" FontSize="30" Text="Title" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>-->
+<!--<TextBlock Grid.Row="0" FontFamily="bahnschrift" FontSize="30" Text="Title" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <TextBlock Grid.Row="1" FontFamily="bahnschrift" FontSize="20" Text="Hello World!!!!!!!!!!!!!!" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
-                    <TextBlock Grid.Row ="0" Name="textBlockName3" FontFamily="bahnschrift" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <TextBlock Grid.Row ="1" Name="textBlockJob3" FontFamily="bahnschrift" FontSize="30" HorizontalAlignment="Center"VerticalAlignment="Center"/>
+<!--<TextBlock Grid.Row ="0" Name="textBlockName3" FontFamily="bahnschrift" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row ="1" Name="textBlockJob3" FontFamily="bahnschrift" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
                     <Image Grid.Row="1" Grid.Column="0" Name="ava3"  Margin="10,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stretch="UniformToFill"/>
                 </Grid>
                 
-            </Border>
-            
+            </Border>-->
 
 
 
-        </Grid>
+
+<!--</Grid>-->
        
-    </ScrollViewer>
-</Page>
+
