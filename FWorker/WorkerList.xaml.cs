@@ -20,7 +20,7 @@ namespace FWorker
     /// </summary>
     public partial class WorkerList : Page
     {
-        List<Worker> workers;
+        /*List<Worker> workers;
         public WorkerList(List<Worker> workers)
         {
             this.workers = workers;
@@ -38,7 +38,7 @@ namespace FWorker
                 Container.Children.Add(temp);
 
             }
-        }
+        }*/
 
         public WorkerList()
         {
