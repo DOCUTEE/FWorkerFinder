@@ -70,78 +70,67 @@ namespace FWorker
 
         public List<Worker> GetWorkerListService(string service, int quantity)
         {
+
             List<Worker> workers = new List<Worker>();
 
-            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.connStr))
+            
+            string sqlQuery = $"SELECT TOP {quantity} * FROM WORKERS WHERE field = service";
+            dbConn.CommandExecute(sqlQuery);
+            SqlParameter parameter = new SqlParameter();
+
+            SqlDataReader reader = dbConn.GetReader(sqlQuery, parameter);
+            while (reader.Read())
             {
-                connection.Open();
-                string sqlQuery = $"SELECT TOP {quantity} * FROM WORKERS WHERE field = service";
-                using (SqlCommand command = new SqlCommand(sqlQuery, connection))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            Worker worker = new Worker(
-                                id: reader.GetString(0),
-                                name: reader.GetString(1),
-                                gender: reader.GetString(2),
-                                birth: reader.GetDateTime(3),
-                                phoneNumber: reader.GetString(4),
-                                address: reader.GetString(5),
-                                email: reader.GetString(6),
-                                citizenID: reader.GetString(7),
-                                logo: reader.GetString(8),
-                                rating: reader.GetDouble(9),
-                                description: reader.GetString(10),
-                                qualifications: reader.GetString(11),
-                                field: reader.GetString(12),
-                                pricePerHour: reader.GetDouble(13)
-                            );
+                Worker worker = new Worker(
+                    id: reader.GetString(0),
+                    name: reader.GetString(1),
+                    gender: reader.GetString(2),
+                    birth: reader.GetDateTime(3),
+                    phoneNumber: reader.GetString(4),
+                    address: reader.GetString(5),
+                    email: reader.GetString(6),
+                    citizenID: reader.GetString(7),
+                    logo: reader.GetString(8),
+                    rating: reader.GetDouble(9),
+                    description: reader.GetString(10),
+                    qualifications: reader.GetString(11),
+                    field: reader.GetString(12),
+                    pricePerHour: reader.GetDouble(13)
+                );
 
-                            workers.Add(worker);
-                        }
-                    }
-                }
+                workers.Add(worker);
             }
-
             return workers;
         }
         public List<Worker> GetWorkerList(int quantity)
         {
             List<Worker> workers = new List<Worker>();
+            string sqlQuery = $"SELECT TOP {quantity} * FROM WORKERS";
+            dbConn.CommandExecute(sqlQuery);
+            SqlParameter parameter = new SqlParameter();
 
-            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.connStr))
+            SqlDataReader reader = dbConn.GetReader(sqlQuery, parameter);         
+            
+            while (reader.Read())
             {
-                connection.Open();
-                string sqlQuery = $"SELECT TOP {quantity} * FROM WORKERS";
-                using (SqlCommand command = new SqlCommand(sqlQuery, connection))
-                {
-                    using (SqlDataReader reader = command.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            Worker worker = new Worker(
-                                id: reader.GetString(0),
-                                name: reader.GetString(1),
-                                gender: reader.GetString(2),
-                                birth: reader.GetDateTime(3),
-                                phoneNumber: reader.GetString(4),
-                                address: reader.GetString(5),
-                                email: reader.GetString(6),
-                                citizenID: reader.GetString(7),
-                                logo: reader.GetString(8),
-                                rating: reader.GetDouble(9),
-                                description: reader.GetString(10),
-                                qualifications: reader.GetString(11),
-                                field: reader.GetString(12),
-                                pricePerHour: reader.GetDouble(13)
-                            );
+                Worker worker = new Worker(
+                    id: reader.GetString(0),
+                    name: reader.GetString(1),
+                    gender: reader.GetString(2),
+                    birth: reader.GetDateTime(3),
+                    phoneNumber: reader.GetString(4),
+                    address: reader.GetString(5),
+                    email: reader.GetString(6),
+                    citizenID: reader.GetString(7),
+                    logo: reader.GetString(8),
+                    rating: reader.GetDouble(9),
+                    description: reader.GetString(10),
+                    qualifications: reader.GetString(11),
+                    field: reader.GetString(12),
+                    pricePerHour: reader.GetDouble(13)
+                );
 
-                            workers.Add(worker);
-                        }
-                    }
-                }
+                workers.Add(worker);
             }
 
             return workers;
@@ -149,39 +138,34 @@ namespace FWorker
 
 
 
-        public Worker GetWorker(string id)
+        public Worker GetWorker(string iddd)
         {
             Worker worker;
-            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.connStr))
-            {
-                connection.Open();
-                using (var cmd = connection.CreateCommand())
-                {
-                    cmd.CommandText = "SELECT * FROM WORKERS WHERE id=@id";
-                    cmd.Parameters.AddWithValue("@id", id);
+            
+            string sqlQuery = "SELECT * FROM WORKERS WHERE id=@id";
+            SqlParameter paramId = new SqlParameter("@id", iddd);
 
-                    using (var reader = cmd.ExecuteReader())
-                    {
-                      
-                        worker = new Worker(
-                            id: reader.GetString(0),
-                            name: reader.GetString(1),
-                            gender: reader.GetString(2),
-                            birth: reader.GetDateTime(3),
-                            phoneNumber: reader.GetString(4),
-                            address: reader.GetString(5),
-                            email: reader.GetString(6),
-                            citizenID: reader.GetString(7),
-                            logo: reader.GetString(8),
-                            rating: reader.GetDouble(9),
-                            description: reader.GetString(10),
-                            qualifications: reader.GetString(11),
-                            field: reader.GetString(12),
-                            pricePerHour: reader.GetDouble(13));
+            SqlDataReader reader = dbConn.GetReader(sqlQuery, paramId);
+
+
+            worker = new Worker(
+            id: reader.GetString(0),
+            name: reader.GetString(1),
+            gender: reader.GetString(2),
+            birth: reader.GetDateTime(3),
+            phoneNumber: reader.GetString(4),
+            address: reader.GetString(5),
+            email: reader.GetString(6),
+            citizenID: reader.GetString(7),
+            logo: reader.GetString(8),
+            rating: reader.GetDouble(9),
+            description: reader.GetString(10),
+            qualifications: reader.GetString(11),
+            field: reader.GetString(12),
+            pricePerHour: reader.GetDouble(13));
                         
-                    }
-                }
-            }
+                
+            
             return worker;
         }
 
