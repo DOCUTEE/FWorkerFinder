@@ -23,27 +23,14 @@ namespace FWorker.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string conn {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=Tru" +
+            "e;Connect Timeout=30;Encrypt=False;ApplicationIntent=ReadWrite;TrustServerCertif" +
+            "icate=True")]
+        public string connStr {
             get {
-                return ((string)(this["conn"]));
-            }
-            set {
-                this["conn"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Settingdsad {
-            get {
-                return ((string)(this["Settingdsad"]));
-            }
-            set {
-                this["Settingdsad"] = value;
+                return ((string)(this["connStr"]));
             }
         }
     }

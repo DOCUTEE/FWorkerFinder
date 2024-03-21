@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,25 @@ namespace FWorker
     /// </summary>
     public partial class WorkerButton : UserControl
     {
+        Worker worker;
+        public WorkerButton(Worker worker)
+        {
+            this.worker = worker;
+            
+            InitializeComponent();
+            string path = Environment.CurrentDirectory;
+            string path2 = Directory.GetParent(path).Parent.Parent.FullName + worker.Logo;
+            imgWorker.Source = new BitmapImage(new Uri(path2));
+            workerName.Content = worker.Name;
+            string tmp = worker.Rating.ToString();
+            string ratingStr = "Đánh giá: " + tmp + "/5⭐";
+            workerRating.Content = ratingStr;
+            workerAddress.Text = "Địa chỉ: " + worker.Address;
+            lblPhoneNumber.Content = worker.PhoneNumber;
+
+
+
+        }
         public WorkerButton()
         {
             InitializeComponent();
@@ -48,7 +68,7 @@ namespace FWorker
             Grid mainContainer = (Grid)mainWindow.FindName("gridContext");
             mainContainer.Children.Clear();
             Frame frame = new Frame();
-            frame.Content = new WorkerInfo();
+            frame.Content = new WorkerInfo(worker);
             mainContainer.Children.Add(frame);
         }
     }

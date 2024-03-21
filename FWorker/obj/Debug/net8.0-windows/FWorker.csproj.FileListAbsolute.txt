@@ -56,3 +56,9 @@ C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\W
 C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerList.baml
 C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerInfo.g.cs
 C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerInfo.baml
+C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

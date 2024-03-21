@@ -30,7 +30,7 @@
                     </Grid.ColumnDefinitions>
                     <Label x:Name="workerName" Grid.Column="0" FontSize="28" Content="Nguyễn Quốc Thịnh" FontFamily="Bahnschrift" VerticalAlignment="Center"></Label>
                     <Grid Grid.Column="1">
-                        <Image Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\HeartINS.png" Height="30"></Image>
+                        <Image x:Name="imgWorker" Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\HeartINS.png" Height="30"></Image>
                     </Grid>
 
                 </Grid>
@@ -39,22 +39,22 @@
                         <ColumnDefinition Width="5*"/>
                         <ColumnDefinition Width="2*"/>
                     </Grid.ColumnDefinitions>
-                    <Label Content="Đánh giá: 4.9/5" FontSize="20" FontFamily="Bahnschrift" VerticalAlignment="Center" Grid.ColumnSpan="2"></Label>
+                    <Label x:Name="workerRating" Content ="Đánh giá: 4.9/5" FontSize="20" FontFamily="Bahnschrift" VerticalAlignment="Center" Grid.ColumnSpan="2"></Label>
                 </Grid>
                 <Grid Grid.Row="2">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
+                   
+                        <RowDefinition Height="2*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
-                    <Label Grid.Row="0">Địa chỉ: 123, Nguyễn Văn Linh, Quận 7, TP.HCM</Label>
-                    <Label Grid.Row="1">Thân tiện, tận tình, giá cả hợp lý</Label>
-                    <Grid Grid.Row ="2" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+                    <TextBlock x:Name="workerAddress" Text="Địa chỉ: 123, Nguyễn Văn Linh, Quận 7, TP.HCM" Grid.Row="0" TextAlignment="Justify" TextWrapping="Wrap" ></TextBlock>
+             
+                    <Grid Grid.Row ="1" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="2*"/>
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
-                        <Label Grid.Column="0" >Số điện thoại: 0123456789</Label>
+                        <Label x:Name="lblPhoneNumber" Grid.Column="0" Content="Số điện thoại: 0123456789"></Label>
                         <Grid Grid.Column="1">
                             <Button  Content="Xem thêm..." Background="Transparent" Opacity="0.5" FontSize="18" FontFamily="Bahnschrift" BorderThickness="0" Click="Button_Click"></Button>
                         </Grid>

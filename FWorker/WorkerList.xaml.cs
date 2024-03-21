@@ -20,7 +20,7 @@ namespace FWorker
     /// </summary>
     public partial class WorkerList : Page
     {
-        /*List<Worker> workers;
+        List<Worker> workers;
         public WorkerList(List<Worker> workers)
         {
             this.workers = workers;
@@ -33,12 +33,12 @@ namespace FWorker
                 Grid temp = new Grid();
                 Grid.SetRow(temp, x);
                 Grid.SetRow(temp, y);
-                WorkerButton workerButton = new WorkerButton();
+                WorkerButton workerButton = new WorkerButton(workers[i]);
                 temp.Children.Add(workerButton);
                 Container.Children.Add(temp);
 
             }
-        }*/
+        }
 
         public WorkerList()
         {
