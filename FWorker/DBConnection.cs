@@ -5,7 +5,7 @@ using System.Windows;
 
 namespace FWorker
 {
-    public class DBConnection
+    internal class DBConnection
     {
         SqlConnection conn;
 
@@ -35,6 +35,39 @@ namespace FWorker
             }
 
             return dtTable;
+        }
+
+
+        public void CommandExecute(string sqlStr)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                if (cmd.ExecuteNonQuery() > 0)
+                {
+                    MessageBox.Show("Thành công");
+                }
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("Thất bại " + exc.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public SqlDataReader GetReader(string sqlStr, SqlParameter parameter)
+        {
+            // Tạo một đối tượng SqlCommand để thực thi câu truy vấn
+            SqlCommand cmd = new SqlCommand(sqlStr, conn);
+            // Thêm tham số vào đối tượng SqlCommand
+            cmd.Parameters.Add(parameter);
+
+            // Thực thi câu truy vấn và trả về SqlDataReader
+            return cmd.ExecuteReader();
         }
 
         public void AdapterExecute(string sqlStr, string successMessage)
