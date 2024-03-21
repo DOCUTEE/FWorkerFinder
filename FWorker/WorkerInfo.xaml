@@ -8,37 +8,140 @@
       d:DesignHeight="924" d:DesignWidth="1171"
       Title="WorkerInfo">
 
-    <Border CornerRadius="10" Background="#EFEFEF" Margin="10,10,10,10">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="0">
+    <Border CornerRadius="10" Margin="10,10,10,10">
+        <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
-                <Border Grid.Column="0" Background="White" CornerRadius="10" Margin="10,10,10,10">
-                    <Image Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\Quang.png" VerticalAlignment="Bottom" Height="250"/>
-                </Border>
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="3*"/>
-                        <RowDefinition Height="2*"/>
-                    </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="0" Text="Nguyễn Quốc Thịnh" FontFamily="Bahnschrift" FontSize="48" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
-                    <TextBlock Grid.Row="1" Text="Uy tín: 4.9/5*" FontFamily="Bahnschrift" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Left"></TextBlock>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="350"/>
+                    <RowDefinition Height="32"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Border CornerRadius="10" Background="#EFEFEF">
+                        <Image x:Name="imgWorker" Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\Quang.png"></Image>
+                    </Border>
                 </Grid>
-        </Grid>
-            <Grid Grid.Row="1">
-                <TextBlock FontSize="30" HorizontalAlignment="Center" Width="1131" >                    Trình độ làm việc: Ông có trình độ chuyên môn cao trong lĩnh vực sửa chữa và bảo dưỡng máy lạnh, tích lũy được nhiều năm kinh nghiệm.
-Độ uy tín: Được đánh giá cao về độ uy tín và đáng tin cậy trong ngành.
-Mô tả thái độ: Thái độ làm việc chuyên nghiệp và thân thiện, luôn lắng nghe và tư vấn khách hàng một cách tận tâm.
-Thông tin cơ bản: Nguyễn Văn Hải là một ông thợ sửa máy lạnh có kinh nghiệm, uy tín và chuyên nghiệp, cam kết mang lại sự hài lòng tuyệt đối cho khách hàng.</TextBlock>
+                <Label Grid.Row="1"  FontFamily="Bahnschrift" FontSize="25" VerticalAlignment="Bottom" Opacity="0.5" HorizontalAlignment="Center">Kinh nghiệm</Label>
+                
+
             </Grid>
-        
-    </Grid>
+            <Grid Grid.Column="1" Margin="10,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="350"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+
+                        </Grid.ColumnDefinitions>
+                        <TextBlock x:Name="tblWorkerName" Grid.Column="0" Text="Nguyễn Quốc Thịnh" FontFamily="Bahnschrift" FontSize="32" VerticalAlignment="Bottom"></TextBlock>
+                        <TextBlock x:Name="tblWorkerLocation" Grid.Column="1" Text="Bình Định" FontFamily="Bahnschrift" FontSize="25" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,0" Opacity="0.5"></TextBlock>
+                        <Image x:Name="BookmarkIcon"  Grid.Column ="2"  Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\HeartINS.png" Margin="5" HorizontalAlignment="Right" />
+
+                    </Grid>
+                    <TextBlock x:Name="tblField" Text="Sửa chửa điện" Grid.Row="1" FontFamily="Bahnschrift" FontSize="25" VerticalAlignment="Bottom"></TextBlock>
+                    <Label Content="Rating"  Grid.Row="2" FontFamily="Bahnschrift" FontSize="15" VerticalAlignment="Bottom"/>
+                    <TextBlock x:Name="tblRating" Text="4.9/5 "  Grid.Row="3" FontFamily="Bahnschrift" FontSize="25" VerticalAlignment="Center"/>
+
+                    <Grid Grid.Row="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="*"/>
+                    
+                        </Grid.ColumnDefinitions>
+                        <Border x:Name="btnInfo" Grid.Column="0" BorderThickness="2" MouseLeftButtonDown="btnInfo_MouseLeftButtonDown">
+                            <Label  VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="20">Liên hệ</Label>
+                        </Border>
+                        <Border x:Name="btnDescription" Grid.Column="1" BorderThickness="2" MouseLeftButtonDown="btnDescription_MouseLeftButtonDown">
+                            <Label  VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="20" >Mô tả</Label>
+                        </Border>
+                    </Grid>
+                    
+                </Grid>
+                <Grid x:Name="containerInfo" Grid.Row="1" Visibility="Collapsed">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Content="Thông tin liên hệ" Grid.Row="0" FontFamily="Bahnschrift" FontSize="16" VerticalAlignment="Bottom" Opacity="0.7"/>
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Số điện thoại" Grid.Row="0" Grid.Column="0" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center" ></Label>
+                        <Label Content="Địa chỉ" Grid.Row="1" Grid.Column="0" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center"></Label>
+                        <Label Content="Email" Grid.Row="2" Grid.Column="0" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center"></Label>
+                        <TextBlock x:Name = "tblPhoneNumber" Text="0935601729" Grid.Row="0" Grid.Column="1" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center" TextWrapping="Wrap" ></TextBlock>
+                        <TextBlock x:Name="tblAddress" Text="22/2 Đường số 7, Phường Linh Trung, TP.Thủ Đức, TP.Hồ Chí Minh" Grid.Row="1" Grid.Column="1" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center" TextWrapping="Wrap"></TextBlock>
+                        <TextBlock x:Name="tblEmail" Text="quangforwork1203@gmail.com" Grid.Row="2" Grid.Column="1" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center" TextWrapping="Wrap"></TextBlock>
+
+                    </Grid>
+                    <Label Content="Thông tin cơ bản" Grid.Row="2" FontFamily="Bahnschrift" FontSize="16" VerticalAlignment="Bottom" Opacity="0.7"/>
+                    <Grid Grid.Row="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Giới tính" Grid.Row="0" Grid.Column="0" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center" ></Label>
+                        <TextBlock x:Name = "tblGender" Text="Nam" Grid.Row="0" Grid.Column="1" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center" TextWrapping="Wrap" ></TextBlock>
+                        <Label Content="Ngày sinh" Grid.Row="1" Grid.Column="0" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center" ></Label>
+                        <TextBlock x:Name = "tblBirth" Text="12/03/2004" Grid.Row="1" Grid.Column="1" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center" TextWrapping="Wrap" ></TextBlock>
+                    </Grid>
+                </Grid>
+                <Grid x:Name="containerDescription" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label Content="Mô tả" Grid.Row="0" FontFamily="Bahnschrift" FontSize="20" VerticalAlignment="Bottom" HorizontalAlignment="Left" Opacity="0.7"/>
+                    <TextBlock x:Name="tblDescription" Grid.Row="1" Margin="10,0,10,0" TextAlignment="Justify" HorizontalAlignment="Left" Text="Nguyễn Quốc Thịnh - Người thợ điện tận tâm
+Nguyễn Quốc Thịnh, một người đàn ông trung niên với đôi bàn tay chai sạn và nụ cười hiền hậu, là một thợ điện dày dặn kinh nghiệm và được nhiều người yêu mến trong khu phố. Với hơn 15 năm gắn bó với nghề, anh đã chinh phục mọi ngóc ngách của hệ thống điện, từ sửa chữa các thiết bị đơn giản đến thi công hệ thống điện cho nhà ở và công trình lớn.
+
+Thịnh nổi tiếng với sự tỉ mỉ, cẩn thận và luôn đặt an toàn lên hàng đầu. Mỗi khi nhận việc, anh đều cẩn thận kiểm tra kỹ lưỡng, đảm bảo mọi thứ được thực hiện đúng kỹ thuật và an toàn nhất. Nhờ sự tỉ mỉ này, anh đã hoàn thành xuất sắc mọi công trình, mang đến sự hài lòng cho khách hàng.
+
+Bên cạnh tay nghề cao, Thịnh còn được biết đến bởi sự nhiệt tình và chu đáo. Anh luôn sẵn sàng giải đáp mọi thắc mắc của khách hàng về hệ thống điện, chia sẻ kinh nghiệm sử dụng tiết kiệm điện và tư vấn phương án sửa chữa hợp lý nhất. Nhiều người dân trong khu phố coi anh như một người bạn, người anh em, luôn tin tưởng và tìm đến anh khi cần sửa chữa điện.
+
+Với tinh thần trách nhiệm cao và thái độ làm việc chuyên nghiệp, Nguyễn Quốc Thịnh xứng đáng là một tấm gương sáng cho thế hệ thợ điện trẻ noi theo." FontFamily="Bahnschrift" FontSize="20" VerticalAlignment="Top" TextWrapping="Wrap" />
+
+                </Grid>
+            </Grid>
+
+        </Grid>
     </Border>
+
 </Page>
