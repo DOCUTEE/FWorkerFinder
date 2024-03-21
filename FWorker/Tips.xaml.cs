@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Intrinsics.X86;
 using System.Text;
@@ -47,6 +48,7 @@ namespace FWorker
             //textBlockName3.Text = n3;
             //textBlockJob3.Text = j3;
             //ava3.Source = new BitmapImage(new Uri(av3));
+
         }
     }
 }

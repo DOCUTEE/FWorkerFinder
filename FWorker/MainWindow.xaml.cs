@@ -68,7 +68,7 @@ namespace FWorker
                 case 5:
                     return "Tài khoản";
                 case 6:
-                    return "Chăm sóc khách hàng";
+                    return "CSKH";
                 default:
                     return "Trang chủ";
             }

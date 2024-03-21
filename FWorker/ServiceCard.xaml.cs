@@ -52,7 +52,15 @@ namespace FWorker
             borderServiceCard.BorderThickness = new Thickness(0);
             borderServiceCard.BorderBrush = (SolidColorBrush)new BrushConverter().ConvertFrom("#00000000");
         }
-        
 
+        private void borderServiceCard_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
+            Grid mainContainer = (Grid)mainWindow.FindName("gridContext");
+            mainContainer.Children.Clear();
+            Frame frame = new Frame();
+            frame.Content = new WorkerList();
+            mainContainer.Children.Add(frame);
+        }
     }
 }
