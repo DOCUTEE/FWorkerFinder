@@ -169,6 +169,30 @@ namespace FWorker
             return worker;
         }
 
+        public List<string> GetFieldValues(string fieldName, int quantity)
+        {
+            List<string> fieldValues = new List<string>();
+
+
+            string sqlQuery = $"SELECT TOP {quantity} [{fieldName}] FROM WORKERS";
+
+            dbConn.CommandExecute(sqlQuery);
+            SqlParameter parameter = new SqlParameter();
+
+            SqlDataReader reader = dbConn.GetReader(sqlQuery, parameter);
+
+            while (reader.Read())
+            {
+                string fieldValue = reader.GetString(0);
+                fieldValues.Add(fieldValue);
+            }
+
+            reader.Close();
+            
+
+            return fieldValues;
+        }
+
 
     }
 }
