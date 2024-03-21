@@ -66,6 +66,47 @@ namespace FWorker
             string sqlStr = "WORKERS";
             return dbConn.LoadData(sqlStr);
         }
+
+
+        public List<Worker> GetWorkerListService(string service, int quantity)
+        {
+            List<Worker> workers = new List<Worker>();
+
+            using (SqlConnection connection = new SqlConnection(Properties.Settings.Default.connStr))
+            {
+                connection.Open();
+                string sqlQuery = $"SELECT TOP {quantity} * FROM WORKERS WHERE field = service";
+                using (SqlCommand command = new SqlCommand(sqlQuery, connection))
+                {
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Worker worker = new Worker(
+                                id: reader.GetString(0),
+                                name: reader.GetString(1),
+                                gender: reader.GetString(2),
+                                birth: reader.GetDateTime(3),
+                                phoneNumber: reader.GetString(4),
+                                address: reader.GetString(5),
+                                email: reader.GetString(6),
+                                citizenID: reader.GetString(7),
+                                logo: reader.GetString(8),
+                                rating: reader.GetDouble(9),
+                                description: reader.GetString(10),
+                                qualifications: reader.GetString(11),
+                                field: reader.GetString(12),
+                                pricePerHour: reader.GetDouble(13)
+                            );
+
+                            workers.Add(worker);
+                        }
+                    }
+                }
+            }
+
+            return workers;
+        }
         public List<Worker> GetWorkerList(int quantity)
         {
             List<Worker> workers = new List<Worker>();
@@ -105,6 +146,7 @@ namespace FWorker
 
             return workers;
         }
+
 
 
         public Worker GetWorker(string id)
