@@ -24,5 +24,21 @@ namespace FWorker
         {
             InitializeComponent();
         }
+
+    
+
+       
+
+        private void btnInfo_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            containerDescription.Visibility = Visibility.Hidden;
+            containerInfo.Visibility = Visibility.Visible;
+        }
+
+        private void btnDescription_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            containerDescription.Visibility = Visibility.Visible;
+            containerDescription.Visibility = Visibility.Hidden;
+        }
     }
 }

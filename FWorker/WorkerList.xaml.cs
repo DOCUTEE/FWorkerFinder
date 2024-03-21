@@ -20,6 +20,26 @@ namespace FWorker
     /// </summary>
     public partial class WorkerList : Page
     {
+        List<Worker> workers;
+        public WorkerList(List<Worker> workers)
+        {
+            this.workers = workers;
+            InitializeComponent();
+            Grid Container = (Grid)FindName("WorkerContainer");
+            for (int i = 0; i < this.workers.Count; i++)
+            {
+                int x = i / 2;
+                int y = i % 2;
+                Grid temp = new Grid();
+                Grid.SetRow(temp, x);
+                Grid.SetRow(temp, y);
+                WorkerButton workerButton = new WorkerButton();
+                temp.Children.Add(workerButton);
+                Container.Children.Add(temp);
+
+            }
+        }
+
         public WorkerList()
         {
             InitializeComponent();
