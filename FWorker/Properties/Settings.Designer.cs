@@ -8,6 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Diagnostics.Metrics;
+using System.Windows.Media;
+using System;
+
 namespace FWorker.Properties {
     
     
@@ -25,12 +29,13 @@ namespace FWorker.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=Tru" +
-            "e;Connect Timeout=30;Encrypt=False;ApplicationIntent=ReadWrite;TrustServerCertif" +
-            "icate=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DOCUTE;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust" +
+            " Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=Fals" +
+            "e")]
         public string connStr {
             get {
-                return ((string)(this["connStr"]));
+                // return ((string)(this["connStr"]));
+                return "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;ApplicationIntent=ReadWrite;TrustServerCertificate=True";
             }
         }
     }

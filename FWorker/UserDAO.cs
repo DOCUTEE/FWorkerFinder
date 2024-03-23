@@ -15,6 +15,9 @@ namespace FWorker
         protected string tableName;
         protected DBConnection dbConn;
 
+        public UserDAO()
+        {
+        }
 
         public UserDAO(string tableName)
         {

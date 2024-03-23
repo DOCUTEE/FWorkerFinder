@@ -24,8 +24,9 @@ namespace FWorker
         {
             InitializeComponent();
             // get grid ServiceContainer
-            WorkerDAO workerDAO = new WorkerDAO("WORKERS");
+            WorkerDAO workerDAO = new WorkerDAO();
             List<string> fields = workerDAO.GetFieldValues("field",10);
+
             Grid ServiceContainer = (Grid)FindName("ServiceContainer");
             for(int i = 0; i < fields.Count; i++)
             {

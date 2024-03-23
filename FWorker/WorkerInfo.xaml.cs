@@ -29,11 +29,13 @@ namespace FWorker
         public WorkerInfo(Worker worker)
         {
             this.worker = worker;
-            List<String> location = ["Bình Định, Huế, Hà Nội, Hồ Chí Minh, Phú Yên"];
+            List<String> location = ["Bình Định", "Huế", "Hà Nội", "Hồ Chí Minh", "Phú Yên"];
             InitializeComponent();
             string path = Environment.CurrentDirectory;
-            string path2 = Directory.GetParent(path).Parent.Parent.FullName + worker.Logo;
+            string path2 = Directory.GetParent(path).Parent.Parent.FullName +"\\" + worker.Logo;
+            imgWorker.Height = 180;
             imgWorker.Source = new BitmapImage(new Uri(path2));
+            
             tblWorkerName.Text = worker.Name;
             Random random = new Random();
             tblWorkerLocation.Text = location[random.Next(0,4)];

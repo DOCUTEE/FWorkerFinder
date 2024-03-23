@@ -14,7 +14,7 @@
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
                 <Border CornerRadius="10" Background="#FFBE22" Margin="5,5,5,5">
-                    <Image Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\Quang.png" VerticalAlignment="Bottom" Height="500"/>
+                    <Image x:Name ="imgWorker" Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\Quang.png" VerticalAlignment="Bottom" Height="500"/>
                 </Border>
             </Grid>
             <Grid Grid.Column="1">
@@ -30,7 +30,7 @@
                     </Grid.ColumnDefinitions>
                     <Label x:Name="workerName" Grid.Column="0" FontSize="28" Content="Nguyễn Quốc Thịnh" FontFamily="Bahnschrift" VerticalAlignment="Center"></Label>
                     <Grid Grid.Column="1">
-                        <Image x:Name="imgWorker" Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\HeartINS.png" Height="30"></Image>
+                        <Image Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\HeartINS.png" Height="30"></Image>
                     </Grid>
 
                 </Grid>
