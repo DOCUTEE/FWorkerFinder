@@ -8,6 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Diagnostics.Metrics;
+using System.Windows.Media;
+using System;
+
 namespace FWorker.Properties {
     
     
@@ -23,27 +27,15 @@ namespace FWorker.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string conn {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DOCUTE;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust" +
+            " Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=Fals" +
+            "e")]
+        public string connStr {
             get {
-                return ((string)(this["conn"]));
-            }
-            set {
-                this["conn"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Settingdsad {
-            get {
-                return ((string)(this["Settingdsad"]));
-            }
-            set {
-                this["Settingdsad"] = value;
+                // return ((string)(this["connStr"]));
+                return "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;ApplicationIntent=ReadWrite;TrustServerCertificate=True";
             }
         }
     }

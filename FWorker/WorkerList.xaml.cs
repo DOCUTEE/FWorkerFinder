@@ -20,25 +20,30 @@ namespace FWorker
     /// </summary>
     public partial class WorkerList : Page
     {
-        /*List<Worker> workers;
-        public WorkerList(List<Worker> workers)
+        
+        private String cardName;
+        private WorkerDAO workerDAO;
+        public WorkerList(String cardName)
         {
-            this.workers = workers;
             InitializeComponent();
+            this.cardName = cardName;
+            this.workerDAO = new WorkerDAO("WORKERS");
+            List<Worker> workers = workerDAO.GetWorkerListService(cardName, 2);
+            //MessageBox.Show(cardName);
             Grid Container = (Grid)FindName("WorkerContainer");
-            for (int i = 0; i < this.workers.Count; i++)
+            for (int i = 0; i < workers.Count; i++)
             {
                 int x = i / 2;
                 int y = i % 2;
                 Grid temp = new Grid();
                 Grid.SetRow(temp, x);
                 Grid.SetRow(temp, y);
-                WorkerButton workerButton = new WorkerButton();
+                WorkerButton workerButton = new WorkerButton(workers[i]);
                 temp.Children.Add(workerButton);
                 Container.Children.Add(temp);
 
             }
-        }*/
+        }
 
         public WorkerList()
         {

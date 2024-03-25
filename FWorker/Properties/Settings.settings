@@ -2,11 +2,8 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FWorker.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="conn" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="Settingdsad" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+    <Setting Name="connStr" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=DOCUTE;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

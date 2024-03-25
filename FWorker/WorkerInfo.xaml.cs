@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,11 +21,35 @@ namespace FWorker
     /// </summary>
     public partial class WorkerInfo : Page
     {
+        Worker worker;
         public WorkerInfo()
         {
             InitializeComponent();
         }
-
+        public WorkerInfo(Worker worker)
+        {
+            this.worker = worker;
+            List<String> location = ["Bình Định", "Huế", "Hà Nội", "Hồ Chí Minh", "Phú Yên"];
+            InitializeComponent();
+            string path = Environment.CurrentDirectory;
+            string path2 = Directory.GetParent(path).Parent.Parent.FullName +"\\" + worker.Logo;
+            imgWorker.Height = 180;
+            imgWorker.Source = new BitmapImage(new Uri(path2));
+            
+            tblWorkerName.Text = worker.Name;
+            Random random = new Random();
+            tblWorkerLocation.Text = location[random.Next(0,4)];
+            tblField.Text = worker.Field;
+            string tmp = worker.Rating.ToString();
+            tblRating.Text = tmp + "/5⭐";
+            tblPhoneNumber.Text = worker.PhoneNumber;
+            tblAddress.Text = worker.Address;
+            tblEmail.Text = worker.Email;
+            tblGender.Text = worker.Gender;
+            tblBirth.Text = worker.Birth.ToString();
+            tblDescription.Text = worker.Description;
+        
+        }
     
 
        
@@ -38,7 +63,7 @@ namespace FWorker
         private void btnDescription_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             containerDescription.Visibility = Visibility.Visible;
-            containerDescription.Visibility = Visibility.Hidden;
+            containerInfo.Visibility = Visibility.Hidden;
         }
     }
 }

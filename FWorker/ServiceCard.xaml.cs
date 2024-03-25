@@ -28,6 +28,7 @@ namespace FWorker
 
         public ServiceCard(string FileName, string cardName)
         {
+            this.cardName = cardName;
             InitializeComponent();
             //assign folder contain application + path to imgService.Source
             string path = Environment.CurrentDirectory;
@@ -59,7 +60,7 @@ namespace FWorker
             Grid mainContainer = (Grid)mainWindow.FindName("gridContext");
             mainContainer.Children.Clear();
             Frame frame = new Frame();
-            frame.Content = new WorkerList();
+            frame.Content = new WorkerList(cardName);
             mainContainer.Children.Add(frame);
         }
     }

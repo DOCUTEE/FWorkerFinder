@@ -24,19 +24,22 @@ namespace FWorker
         {
             InitializeComponent();
             // get grid ServiceContainer
+            WorkerDAO workerDAO = new WorkerDAO();
+            List<string> fields = workerDAO.GetFieldValues("field",10);
+
             Grid ServiceContainer = (Grid)FindName("ServiceContainer");
-            for(int i = 0; i < 10; i++)
+            for(int i = 0; i < fields.Count; i++)
             {
                 //add new grid have Grid.Row = i/2, Grid.Column = i %5 to ServiceContainer
                 Grid temp = new Grid();
-                ServiceCard serviceCard = new ServiceCard("ServiceCard" + (i+1).ToString(),TypeOfService(i));
+                ServiceCard serviceCard = new ServiceCard("ServiceCard" + (i + 1).ToString(), fields[i]);
                 temp.Children.Add(serviceCard);
                 Grid.SetRow(temp, i / 5);
                 Grid.SetColumn(temp, i % 5);
                 ServiceContainer.Children.Add(temp);
             }
         }
-        public String TypeOfService(int index)
+        /*public String TypeOfService(int index)
         {
             //swithcase
             switch (index)
@@ -64,7 +67,7 @@ namespace FWorker
                 default:
                     return "Service";
             }   
-        }
+        }*/
 
         
 
