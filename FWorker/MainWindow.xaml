@@ -74,9 +74,9 @@
                 </Button>
 
             </Grid>
-            <Grid x:Name="gridContext" Grid.Row="1">
-                <Frame Source="HomeScreen.xaml"/>
-            </Grid>
+            
+            <Frame x:Name ="gridContext" Grid.Row="1" Source="HomeScreen.xaml" NavigationUIVisibility="Hidden"/>
+          
         </Grid>
     </Grid>
 </Window>

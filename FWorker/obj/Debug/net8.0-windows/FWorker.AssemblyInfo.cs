@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FWorker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd6a26cbf42beed8e61d7a32d6cee8382b2ff374")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32d2244ff165c9a31105ecb72d2a52f6d47a1743")]
 [assembly: System.Reflection.AssemblyProductAttribute("FWorker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FWorker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

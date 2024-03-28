@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\
 FWorker
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\App.xaml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\App.xaml
 121754819103
 
-24-838452147
+26-146345694
 202-1713667780
 Account.xaml;Booking.xaml;ButtonSideBar.xaml;CustomerService.xaml;History.xaml;HomeScreen.xaml;MainWindow.xaml;ServiceCard.xaml;Tips.xaml;WorkerButton.xaml;WorkerInfo.xaml;WorkerList.xaml;
 
-True
+False
 

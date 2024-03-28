@@ -520,11 +520,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Docute\\Desktop\\FINALUI\\FWorkerFinder\\FWorker\\FWorker.csproj",
+      "projectUniqueName": "C:\\Users\\Docute\\Desktop\\TESTTT\\FWorkerFinder\\FWorker\\FWorker.csproj",
       "projectName": "FWorker",
-      "projectPath": "C:\\Users\\Docute\\Desktop\\FINALUI\\FWorkerFinder\\FWorker\\FWorker.csproj",
+      "projectPath": "C:\\Users\\Docute\\Desktop\\TESTTT\\FWorkerFinder\\FWorker\\FWorker.csproj",
       "packagesPath": "C:\\Users\\Docute\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Docute\\Desktop\\FINALUI\\FWorkerFinder\\FWorker\\obj\\",
+      "outputPath": "C:\\Users\\Docute\\Desktop\\TESTTT\\FWorkerFinder\\FWorker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

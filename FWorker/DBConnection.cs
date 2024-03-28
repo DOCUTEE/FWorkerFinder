@@ -9,9 +9,11 @@ namespace FWorker
     {
         SqlConnection conn;
 
+        public SqlConnection Conn { get => conn; set => conn = value; }
+
         public DBConnection(string connStr)
         {
-            conn = new SqlConnection(connStr);
+            Conn = new SqlConnection(connStr);
         }
 
         public DataTable LoadData(string tableName)
@@ -20,9 +22,9 @@ namespace FWorker
 
             try
             {
-                conn.Open();
+                Conn.Open();
                 string sqlStr = $"SELECT * FROM {tableName}";
-                SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, conn);
+                SqlDataAdapter adapter = new SqlDataAdapter(sqlStr, Conn);
                 adapter.Fill(dtTable);
             }
             catch (Exception ex)
@@ -31,7 +33,7 @@ namespace FWorker
             }
             finally
             {
-                conn.Close();
+                Conn.Close();
             }
 
             return dtTable;
@@ -42,8 +44,8 @@ namespace FWorker
         {
             try
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                Conn.Open();
+                SqlCommand cmd = new SqlCommand(sqlStr, Conn);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     MessageBox.Show("Thành công");
@@ -55,21 +57,20 @@ namespace FWorker
             }
             finally
             {
-                conn.Close();
+                Conn.Close();
             }
         }
 
         public SqlDataReader GetReader(string sqlStr/*, SqlParameter parameter*/)
         {
             // Tạo một đối tượng SqlCommand để thực thi câu truy vấn
-            SqlCommand cmd = new SqlCommand(sqlStr, conn);
+            SqlCommand cmd = new SqlCommand(sqlStr, Conn);
             // Thêm tham số vào đối tượng SqlCommand
             //cmd.Parameters.Add(parameter);
 
             // Mở kết nối trước khi thực thi câu truy vấn
-            conn.Open();
-
-            // Thực thi câu truy vấn và trả về SqlDataReader
+            Conn.Open();
+           
             return cmd.ExecuteReader();
         }
 
@@ -77,8 +78,8 @@ namespace FWorker
         {
             try
             {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(sqlStr, conn);
+                Conn.Open();
+                SqlCommand cmd = new SqlCommand(sqlStr, Conn);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
                     MessageBox.Show(successMessage);
@@ -90,7 +91,7 @@ namespace FWorker
             }
             finally
             {
-                conn.Close();
+                Conn.Close();
             }
         }
     }

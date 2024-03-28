@@ -25,6 +25,7 @@ namespace FWorker
             this.qualifications = qualifications;
             this.field = field;
             this.pricePerHour = pricePerHour;
+            this.ValidateData();
         }
 
         public Worker() { }

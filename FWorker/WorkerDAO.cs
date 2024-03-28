@@ -24,7 +24,6 @@ namespace FWorker
         {
             string sqlStr;
             Worker worker = (Worker)user;
-         
             while (true)
             {
                 sqlStr = string.Format("INSERT INTO {0} (id, name, gender, birth, phoneNumber, address, email ,citizenID, logo, rating, description, qualifications, field, pricePerHour)" +
@@ -81,8 +80,6 @@ namespace FWorker
 
             
             string sqlQuery = $"SELECT TOP {quantity} * FROM WORKERS WHERE field = '{service}'";
-            dbConn.CommandExecute(sqlQuery);
-            SqlParameter parameter = new SqlParameter();
 
             SqlDataReader reader = dbConn.GetReader(sqlQuery);
             while (reader.Read())
@@ -187,7 +184,7 @@ namespace FWorker
             //SqlParameter parameter = new SqlParameter();
 
             SqlDataReader reader = dbConn.GetReader(sqlQuery);
-
+            
             while (reader.Read())
             {
                 string fieldValue = reader.GetString(0);
@@ -195,7 +192,6 @@ namespace FWorker
             }
 
             reader.Close();
-            
 
             return fieldValues;
         }
