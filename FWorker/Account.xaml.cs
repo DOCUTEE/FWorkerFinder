@@ -55,6 +55,22 @@ namespace FWorker
             //Uri uri = new Uri("ApplyJob.xaml", UriKind.Relative);
             //this.NavigationService.Navigate(uri);
             //return 
+
+            Worker worker = new Worker(
+                customer.Id, customer.Name, customer.Gender, customer.Birth, 
+                customer.PhoneNumber, customer.Address, customer.Email,
+                customer.CitizenID, customer.Logo, 0, null, null, null, 0);
+         
+
+
+
+
+            MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
+            Grid mainContainer = (Grid)mainWindow.FindName("gridContext");
+            mainContainer.Children.Clear();
+            Frame frame = new Frame();
+            frame.Content = new ApplyJob(worker);
+            mainContainer.Children.Add(frame);
         }
     }
 }
