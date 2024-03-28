@@ -29,8 +29,8 @@ namespace FWorker
         public string TableName { get => tableName; set => tableName = value; }
         public DBConnection DbConn { get => dbConn; set => dbConn = value; }
 
-        public abstract void Add(string tableName, User user);
-        public abstract void Edit(string tableName, User user);
+        public abstract void Add(User user);
+        public abstract void Edit(User user);
 
 
 
