@@ -23,6 +23,9 @@
                     <RowDefinition Height="*"/>
 
                 </Grid.RowDefinitions>
+                <Grid Grid.Row="4">
+                    <DatePicker></DatePicker>
+                </Grid>
                 <Grid Grid.Row="0">
                     <Border CornerRadius="10" Background="#EFEFEF">
                         <Image x:Name="imgWorker" Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\Quang.png"></Image>
@@ -123,6 +126,7 @@
                         <TextBlock x:Name = "tblBirth" Text="12/03/2004" Grid.Row="1" Grid.Column="1" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center" TextWrapping="Wrap" ></TextBlock>
                     </Grid>
                 </Grid>
+                
                 <Grid x:Name="containerDescription" Grid.Row="1" Visibility="Hidden">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="40"/>

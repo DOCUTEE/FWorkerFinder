@@ -34,12 +34,12 @@
         </Grid>
         <Grid Grid.Row="3">
             <Border Background="#EFEFEF" CornerRadius="10"  HorizontalAlignment="Center" Width="1061" Height="140">
-                <TextBox BorderThickness="0" Background="Transparent" x:Name="txtProblem" Text="Vấn đề"  Width="1041" Height="120" HorizontalAlignment="Center" FontFamily="Bahnschrift" FontSize="20" VerticalAlignment="Center" Opacity="0.5" />
+                <TextBox BorderThickness="0" Background="Transparent" x:Name="txtProblem" Text="Vấn đề"  Width="1041" Height="120" HorizontalAlignment="Center" FontFamily="Bahnschrift" FontSize="20" VerticalAlignment="Center" Opacity="0.5" Cursor="Arrow" />
             </Border>
         </Grid>
         <Grid Grid.Row="4">
-            <Border Background="#EFEFEF" CornerRadius="10"  HorizontalAlignment="Center" Width="1061" Height="140">
-                <TextBox BorderThickness="0" Background="Transparent" x:Name="txtRequirement" Text="Yêu cầu"  Width="1041" Height="120" HorizontalAlignment="Center" FontFamily="Bahnschrift" FontSize="20" VerticalAlignment="Center" Opacity="0.5" />
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="200" VerticalAlignment="Center" Width="249" CornerRadius="10" Background="#FFFAF3E8" Margin="54,0,0,0">
+                <Button Content="+ Hình ảnh" HorizontalAlignment="Center" VerticalAlignment="Center" Height="164" Width="249" Click="Button_Click_1" FontSize="40" Background="{x:Null}" BorderBrush="{x:Null}"   />
             </Border>
         </Grid>
         <Grid Grid.Row="5">

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Docute\\Desktop\\FINALUI\\FWorkerFinder\\FWorker\\FWorker.csproj": {}
+    "C:\\Users\\quoct\\source\\repos\\FWorkerFinder\\FWorker\\FWorker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Docute\\Desktop\\FINALUI\\FWorkerFinder\\FWorker\\FWorker.csproj": {
+    "C:\\Users\\quoct\\source\\repos\\FWorkerFinder\\FWorker\\FWorker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Docute\\Desktop\\FINALUI\\FWorkerFinder\\FWorker\\FWorker.csproj",
+        "projectUniqueName": "C:\\Users\\quoct\\source\\repos\\FWorkerFinder\\FWorker\\FWorker.csproj",
         "projectName": "FWorker",
-        "projectPath": "C:\\Users\\Docute\\Desktop\\FINALUI\\FWorkerFinder\\FWorker\\FWorker.csproj",
-        "packagesPath": "C:\\Users\\Docute\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Docute\\Desktop\\FINALUI\\FWorkerFinder\\FWorker\\obj\\",
+        "projectPath": "C:\\Users\\quoct\\source\\repos\\FWorkerFinder\\FWorker\\FWorker.csproj",
+        "packagesPath": "C:\\Users\\quoct\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\quoct\\source\\repos\\FWorkerFinder\\FWorker\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Docute\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\quoct\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

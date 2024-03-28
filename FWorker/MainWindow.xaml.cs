@@ -64,7 +64,7 @@ namespace FWorker
                 case 3:
                     return "Lịch sử";
                 case 4:
-                    return "Mẹo Hay";
+                    return "Tìm việc";
                 case 5:
                     return "Tài khoản";
                 case 6:
