@@ -93,7 +93,7 @@ namespace FWorker {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/FWorker;component/booking.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/FWorker;V1.0.0.0;component/booking.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Booking.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
