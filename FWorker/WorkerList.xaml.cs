@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,21 +21,22 @@ namespace FWorker
     /// </summary>
     public partial class WorkerList : Page
     {
+        private List<Worker> workers;
         public WorkerList(String cardName)
         {
             InitializeComponent();
-            List<Worker> workers;
+            //List<Worker> workers;
             if (cardName != "LikedWorkerList")
             {
                 WorkerDAO workerDAO = new WorkerDAO();
-                workers = workerDAO.GetWorkerListService(cardName, 10); 
+                this.workers = workerDAO.GetWorkerListService(cardName, 10); 
             }
             else
             {
                 LikedWorkerDAO likedWorkerDAO = new LikedWorkerDAO();
-                workers = likedWorkerDAO.GetLikedList("1");
+                this.workers = likedWorkerDAO.GetLikedList("1");
             }
-            this.AddWorkersToContainer("WorkerContainer", workers);
+            this.AddWorkersToContainer("WorkerContainer",this.workers);
         }
         public WorkerList(List<Worker> workers)
         {
@@ -59,10 +61,12 @@ namespace FWorker
                 Container.Children.Add(temp);
             }
         }
-        void AddWorkersToContainer(string container, List<Worker> workers)
+
+        void AddWorkersToContainer(string container, List<Worker>workers)
         {
-            Grid Container = (Grid)FindName("WorkerContainer");
-            for (int i = 0; i < workers.Count; i++)
+            
+            Grid contain = (Grid)FindName("WorkerContainer");
+            for (int i = 0; i < this.workers.Count; i++)
             {
                 int x = i / 2;
                 int y = i % 2;
@@ -71,8 +75,15 @@ namespace FWorker
                 Grid.SetColumn(temp, y);
                 WorkerButton workerButton = new WorkerButton(workers[i]);
                 temp.Children.Add(workerButton);
-                Container.Children.Add(temp);
+                contain.Children.Add(temp);
             }
+        }
+
+        private void SortPrice_Click(object sender, RoutedEventArgs e)
+        {
+            
+            var sortedWorker = workers.OrderBy(worker => worker.PricePerHour).ToList();
+            AddWorkersToContainer("WorkerContainer", sortedWorker);
         }
     }
 }

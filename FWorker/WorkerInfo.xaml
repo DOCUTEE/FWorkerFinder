@@ -23,7 +23,17 @@
                     <RowDefinition Height="*"/>
 
                 </Grid.RowDefinitions>
-                
+                <Grid Grid.Row="3">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <DatePicker Grid.Row="0" FontSize="40"></DatePicker>
+                    <Border Grid.Row="1" Background="#F19203" CornerRadius="10">
+                        <TextBlock Text="Đăng ký ngay" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap"></TextBlock>
+                    </Border>
+                </Grid>
                 <Grid Grid.Row="0">
                     <Border CornerRadius="10" Background="#EFEFEF">
                         <Image x:Name="imgWorker" Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\Quang.png"></Image>
