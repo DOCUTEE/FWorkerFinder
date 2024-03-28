@@ -23,4 +23,8 @@ select * from WORKERS
 drop table LikedWorker
 
 Select * from LikedWorker where CustomerID = '1' and WorkerID = '1'
-select * from LikedWorker
+select WorkerID from LikedWorker
+Where CustomerID = '1'
+
+select *from WORKERS
+

@@ -76,8 +76,9 @@
                 <Button Content="Edit" FontFamily="Bahnschrift" FontSize="25" Height="60"></Button>
             </Grid>
             <Grid Grid.Column="3">
-                <Button Content="Sign Out" FontFamily="Bahnschrift" FontSize="25" Height="60"></Button>
+                <Button x:Name="Liked" Click="Liked_Click" Content="Liked" FontFamily="Bahnschrift" FontSize="25" Height="60"></Button>
             </Grid>
         </Grid>
+
     </Grid>
 </UserControl>

@@ -94,5 +94,20 @@ namespace FWorker
                 Conn.Close();
             }
         }
+        public SqlDataReader GetReader1(string sqlStr, SqlParameter parameter)
+        {
+            // Tạo một đối tượng SqlCommand để thực thi câu truy vấn
+            SqlCommand cmd = new SqlCommand(sqlStr, conn);
+            // Thêm tham số vào đối tượng SqlCommand
+            cmd.Parameters.Add(parameter);
+
+            // Mở kết nối trước khi thực thi câu truy vấn
+            conn.Open();
+
+            // Thực thi câu truy vấn và trả về SqlDataReader
+            return cmd.ExecuteReader();
+        }
+
+
     }
 }

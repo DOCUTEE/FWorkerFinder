@@ -54,10 +54,6 @@ namespace FWorker
             BookmarkIcon.Source = new BitmapImage(new Uri(bookmarkPath));
             likedWorkerDAO.DbConn.Conn.Close();
         }
-    
-
-       
-
         private void btnInfo_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             containerDescription.Visibility = Visibility.Hidden;
@@ -89,9 +85,7 @@ namespace FWorker
                 likedWorkerDAO.Add(this.worker.Id);
                 bookmarkPath += "HeartRed.png";
             }
-            
             BookmarkIcon.Source = new BitmapImage(new Uri(bookmarkPath));
-            
         }
     }
 }

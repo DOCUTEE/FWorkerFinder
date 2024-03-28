@@ -50,5 +50,22 @@ namespace FWorker
             SqlDataReader reader = dbConn.GetReader(sqlStr);
             return reader.HasRows;
         }
+        public List<Worker> GetLikedList(string customerID)
+        {
+            List<Worker>workers = new List<Worker>();
+            string sqlStr = $"select WorkerID from {tableName} where CustomerID = '{customerID}'";
+            SqlDataReader sqlDataReader = dbConn.GetReader(sqlStr);
+            int cnt = 0;
+            while (sqlDataReader.Read())
+            {
+                cnt++;
+                string id = sqlDataReader.GetString(0);
+                WorkerDAO workerDAO = new WorkerDAO();
+                MessageBox.Show(cnt.ToString());
+                Worker worker = workerDAO.GetWorker(id);
+                workers.Add(worker);
+            }
+            return workers;
+        }
     }
 }

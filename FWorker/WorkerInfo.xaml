@@ -23,6 +23,7 @@
                     <RowDefinition Height="*"/>
 
                 </Grid.RowDefinitions>
+                
                 <Grid Grid.Row="0">
                     <Border CornerRadius="10" Background="#EFEFEF">
                         <Image x:Name="imgWorker" Source="C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\Logo\Quang.png"></Image>
@@ -30,7 +31,6 @@
                 </Grid>
                 <Label Grid.Row="1"  FontFamily="Bahnschrift" FontSize="25" VerticalAlignment="Bottom" Opacity="0.5" HorizontalAlignment="Center">Kinh nghiệm</Label>
                 <TextBlock x:Name="tblQualification" Text="HAVC Certificate" Grid.Row="2" FontFamily="Bahnschrift" FontSize="28" VerticalAlignment="Center" TextWrapping="Wrap"></TextBlock>
-
             </Grid>
             <Grid Grid.Column="1" Margin="10,0,0,0">
                 <Grid.RowDefinitions>

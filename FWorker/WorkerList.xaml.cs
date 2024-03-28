@@ -20,31 +20,28 @@ namespace FWorker
     /// </summary>
     public partial class WorkerList : Page
     {
-        
-        private String cardName;
-        private WorkerDAO workerDAO;
         public WorkerList(String cardName)
         {
             InitializeComponent();
-            this.cardName = cardName;
-            this.workerDAO = new WorkerDAO("WORKERS");
-            List<Worker> workers = workerDAO.GetWorkerListService(cardName, 2);
-            //MessageBox.Show(cardName);
-            Grid Container = (Grid)FindName("WorkerContainer");
-            for (int i = 0; i < workers.Count; i++)
+            List<Worker> workers;
+            if (cardName != "LikedWorkerList")
             {
-                int x = i / 2;
-                int y = i % 2;
-                Grid temp = new Grid();
-                Grid.SetRow(temp, x);
-                Grid.SetRow(temp, y);
-                WorkerButton workerButton = new WorkerButton(workers[i]);
-                temp.Children.Add(workerButton);
-                Container.Children.Add(temp);
-
+                WorkerDAO workerDAO = new WorkerDAO();
+                workers = workerDAO.GetWorkerListService(cardName, 10); 
             }
+            else
+            {
+                LikedWorkerDAO likedWorkerDAO = new LikedWorkerDAO();
+                workers = likedWorkerDAO.GetLikedList("1");
+            }
+            this.AddWorkersToContainer("WorkerContainer", workers);
         }
-
+        public WorkerList(List<Worker> workers)
+        {
+            InitializeComponent();
+            
+        }
+        
         public WorkerList()
         {
             InitializeComponent();
@@ -60,7 +57,21 @@ namespace FWorker
                 WorkerButton workerButton = new WorkerButton();
                 temp.Children.Add(workerButton);
                 Container.Children.Add(temp);
-
+            }
+        }
+        void AddWorkersToContainer(string container, List<Worker> workers)
+        {
+            Grid Container = (Grid)FindName("WorkerContainer");
+            for (int i = 0; i < workers.Count; i++)
+            {
+                int x = i / 2;
+                int y = i % 2;
+                Grid temp = new Grid();
+                Grid.SetRow(temp, x);
+                Grid.SetColumn(temp, y);
+                WorkerButton workerButton = new WorkerButton(workers[i]);
+                temp.Children.Add(workerButton);
+                Container.Children.Add(temp);
             }
         }
     }
