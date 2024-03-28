@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="924" d:DesignWidth="1171"
                Title="Account">
-                
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="5*"/>
@@ -24,8 +24,15 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <Grid Grid.Column="0">
-                    <Border CornerRadius="10" Background="#EFEFEF" Margin="20,30,20,30">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10*" />
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0" CornerRadius="10" Background="#EFEFEF" Margin="20,30,20,30">
                         <Image x:Name="imgCustomer"/>
+                    </Border>
+                    <Border Grid.Row="1" Width="100" CornerRadius="10" Background="LightCyan" Margin="2,0,2,0">
+                        <Label  x:Name="lbId" FontFamily="Bahnschrift" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" />
                     </Border>
 
                 </Grid>

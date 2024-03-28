@@ -28,6 +28,7 @@ namespace FWorker
             InitializeComponent();
             this.customerDAO = new CustomerDAO();
             this.customer = customerDAO.GetCustomer("2");
+            lbId.Content = customer.Id;
             tbCitizenID.Text = customer.CitizenID;
             tbName.Text = customer.Name;
             tbBirth.Text = customer.Birth.ToString();
@@ -57,13 +58,10 @@ namespace FWorker
             //return 
 
             Worker worker = new Worker(
-                customer.Id, customer.Name, customer.Gender, customer.Birth, 
-                customer.PhoneNumber, customer.Address, customer.Email,
-                customer.CitizenID, customer.Logo, 0, null, null, null, 0);
+                this.customer.Id, this.customer.Name, this.customer.Gender, this.customer.Birth, 
+                this.customer.PhoneNumber, this.customer.Address, this.customer.Email,
+                this.customer.CitizenID, this.customer.Logo, 0, null, null, null, 0);
          
-
-
-
 
             MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
             Grid mainContainer = (Grid)mainWindow.FindName("gridContext");
