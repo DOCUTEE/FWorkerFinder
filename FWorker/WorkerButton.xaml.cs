@@ -66,11 +66,11 @@ namespace FWorker
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
-            Grid mainContainer = (Grid)mainWindow.FindName("gridContext");
-            mainContainer.Children.Clear();
-            Frame frame = new Frame();
-            frame.Content = new WorkerInfo(worker);
-            mainContainer.Children.Add(frame);
+            Frame mainContainer = (Frame)mainWindow.FindName("gridContext");
+            
+    
+            mainContainer.Content = new WorkerInfo(worker);
+            
         }
     }
 }

@@ -60,38 +60,38 @@ namespace FWorker
             //get main window
             MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
             //get grid main container
-            Grid mainContainer = (Grid)mainWindow.FindName("gridContext");
+            Frame mainContainer = (Frame)mainWindow.FindName("gridContext");
             //clear all children of main container
-            mainContainer.Children.Clear();
+            //mainContainer.Children.Clear();
             //add new page to main container
-            Frame frame = new Frame();
+            //Frame frame = new Frame();
             switch (name)
             {
                 case "HomeScreen":
-                    frame.Content = new HomeScreen();
+                    mainContainer.Content = new HomeScreen();
 
                     break;
                 case "Booking":
-                    frame.Content = new Booking();
+                    mainContainer.Content = new Booking();
                     break;
                 case "History":
-                    frame.Content = new History();
+                    mainContainer.Content = new History();
                     break;
                 case "Tips":
-                    frame.Content = new Tips();
+                    mainContainer.Content = new Tips();
                     break;
                 case "Account":
-                    frame.Content = new Account();
+                    mainContainer.Content = new Account();
                     break;
                 case "CustomerService":
-                    frame.Content = new CustomerService();
+                    mainContainer.Content = new CustomerService();
                     break;
                 default:
-                    frame.Content = new HomeScreen();
+                    mainContainer.Content = new HomeScreen();
                     break;
             }
             this.btnNavigate.Background = (SolidColorBrush)new BrushConverter().ConvertFrom("#FFBE22");
-            mainContainer.Children.Add(frame);
+            //mainContainer.Children.Add(frame);
         }
 
         

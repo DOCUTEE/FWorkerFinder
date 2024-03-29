@@ -8,10 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System.Diagnostics.Metrics;
-using System.Windows.Media;
-using System;
-
 namespace FWorker.Properties {
     
     
@@ -34,8 +30,8 @@ namespace FWorker.Properties {
             "e")]
         public string connStr {
             get {
-                // return ((string)(this["connStr"]));
-                return "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;ApplicationIntent=ReadWrite;TrustServerCertificate=True";
+                //return ((string)(this["connStr"]));
+                return "Data Source=DOCUTE;Integrated Security=True;Connect Timeout=30;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             }
         }
     }

@@ -21,7 +21,6 @@ namespace FWorker
         {
             string sqlStr;
             Worker worker = (Worker)user;
-         
             while (true)
             {
                 sqlStr = string.Format("INSERT INTO {0} (id, name, gender, birth, phoneNumber, address, email ,citizenID, logo, rating, description, qualifications, field, pricePerHour)" +
@@ -80,7 +79,6 @@ namespace FWorker
 
             
             string sqlQuery = $"SELECT TOP {quantity} * FROM WORKERS WHERE field = '{service}'";
-            dbConn.CommandExecute(sqlQuery);
 
             SqlDataReader reader = dbConn.GetReader(sqlQuery);
             while (reader.Read())
@@ -141,36 +139,38 @@ namespace FWorker
 
 
 
-        //public Worker GetWorker(string iddd)
-        //{
-        //    Worker worker;
-            
-        //    string sqlQuery = "SELECT * FROM WORKERS WHERE id=@id";
-        //    SqlParameter paramId = new SqlParameter("@id", iddd);
+        public Worker GetWorker(string id)
+        {
+            Worker worker = new Worker();
+            string sqlQuery = "SELECT * FROM WORKERS WHERE id=@id";
 
-        //    SqlDataReader reader = dbConn.GetReader(sqlQuery, paramId);
+            SqlParameter paramId = new SqlParameter("@id", id);
 
+            SqlDataReader reader = dbConn.GetReader1(sqlQuery, paramId);
 
-        //    worker = new Worker(
-        //    id: reader.GetString(0),
-        //    name: reader.GetString(1),
-        //    gender: reader.GetString(2),
-        //    birth: reader.GetDateTime(3),
-        //    phoneNumber: reader.GetString(4),
-        //    address: reader.GetString(5),
-        //    email: reader.GetString(6),
-        //    citizenID: reader.GetString(7),
-        //    logo: reader.GetString(8),
-        //    rating: reader.GetDouble(9),
-        //    description: reader.GetString(10),
-        //    qualifications: reader.GetString(11),
-        //    field: reader.GetString(12),
-        //    pricePerHour: reader.GetDouble(13));
-                        
-                
-            
-        //    return worker;
-        //}
+            if (reader != null && reader.Read())
+            {
+                worker = new Worker(
+                    id: reader.GetString(0),
+                    name: reader.GetString(1),
+                    gender: reader.GetString(2),
+                    birth: reader.GetDateTime(3),
+                    phoneNumber: reader.GetString(4),
+                    address: reader.GetString(5),
+                    email: reader.GetString(6),
+                    citizenID: reader.GetString(7),
+                    logo: reader.GetString(8),
+                    rating: reader.GetDouble(9),
+                    description: reader.GetString(10),
+                    qualifications: reader.GetString(11),
+                    field: reader.GetString(12),
+                    pricePerHour: reader.GetDouble(13)
+                );
+            }
+            else
+                MessageBox.Show("Không tìm thấy khách hàng có ID: " + id);
+            return worker;
+        }
 
         public List<string> GetFieldValues(string fieldName, int quantity)
         {
@@ -183,7 +183,7 @@ namespace FWorker
             //SqlParameter parameter = new SqlParameter();
 
             SqlDataReader reader = dbConn.GetReader(sqlQuery);
-
+            
             while (reader.Read())
             {
                 string fieldValue = reader.GetString(0);
@@ -191,7 +191,6 @@ namespace FWorker
             }
 
             reader.Close();
-            
 
             return fieldValues;
         }

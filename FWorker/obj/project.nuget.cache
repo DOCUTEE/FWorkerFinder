@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m+EiatbZkxFkwqKg0YWnZ8Rcw524VhF2DAbRrpsiEQyEabGJDFYkFi3sYspJXIBUzaEhk7wCNECWtGTSyBKFpw==",
+  "dgSpecHash": "Klv/t5GZwcd2BYHdmHpBq8lg8wew8bOUXCkjKzko1Yof2kEiKHSUxdYJXp8hJ085+38IcZfu3PlblO8uaYZalQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Docute\\Desktop\\FINALUI\\FWorkerFinder\\FWorker\\FWorker.csproj",
+  "projectFilePath": "C:\\Users\\Docute\\Desktop\\TESTTT\\FWorkerFinder\\FWorker\\FWorker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Docute\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Docute\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

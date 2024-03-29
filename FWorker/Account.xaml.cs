@@ -70,5 +70,12 @@ namespace FWorker
             frame.Content = new ApplyJob(worker);
             mainContainer.Children.Add(frame);
         }
+
+        private void Liked_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
+            Frame mainContain = (Frame)mainWindow.FindName("gridContext");
+            mainContain.Content = new WorkerList("LikedWorkerList");
+        }
     }
 }
