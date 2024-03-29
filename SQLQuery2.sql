@@ -46,16 +46,20 @@ VALUES
 
 
  CREATE TABLE [dbo].[WORKS] (
-    worksID int IDENTITY(1,1) primary key,
+    worksID int primary key,
     name varchar(256) NULL,
     number varchar(256) NULL,
     locate varchar(256) NULL,
     request text NULL,
     problemImage varchar(256) NULL
  )
- INSERT INTO WORKS (name, number, locate, request, problemImage) values 
-    ('Huy', '01', 'aaa', 'bbb', 'cc'),
-    ('Tuong', '01', 'aaa', 'bbb', 'cc')
-
+ INSERT INTO WORKS (worksID,name, number, locate, request, problemImage) values 
+    (1,'Huy', '0123456789', 'Ho Chi Minh', 'Sua dien', 'Repair\fix1.png'),
+    (2,'Tuong', '0987654321', 'Ha Noi', 'Sua dien', 'Repair\fix2.png'),
+    (3,'Quang', '0987654321', 'Da Nang', 'Sua nha', 'Repair\fix3.png')
  Select * from WORKS
  Drop table WORKS
+
+ delete from WORKS
+
+ SELECT request FROM WORKS WHERE worksID = 1

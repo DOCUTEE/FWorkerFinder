@@ -65,14 +65,12 @@
                 <TextBox x:Name="tbEmail" Grid.Row="5" Width="650" Height="40" FontFamily="Bahnschrift" FontSize="28" Margin="214,13,14,13"/>
                 <TextBlock x:Name="tblNumber" Text="Number" Grid.Row="6" FontFamily="Bahnschrift" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                 <TextBox x:Name="tbNumber" Grid.Row="6" Width="650" Height="40" FontFamily="Bahnschrift" FontSize="28" Margin="214,13,14,13"/>
-
-
-
                 <TextBlock x:Name="tblQualifications" Text="Qualifications" Grid.Row="7" FontFamily="Bahnschrift" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-                <TextBox x:Name="tbQualifications" Grid.Row="7" Width="650" Height="40" FontFamily="Bahnschrift" FontSize="28" Margin="214,13,14,13"/>
+
+                <TextBox  Grid.Row="7" x:Name="tbQualifications"  Width="650" Height="40" FontFamily="Bahnschrift" FontSize="28" Margin="214,13,14,13"/>
 
                 <TextBlock x:Name="tblField" Text="Field" Grid.Row="8" FontFamily="Bahnschrift" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Left"/>
-                <TextBox Grid.Row="8" Width="650" Height="40" FontFamily="Bahnschrift" FontSize="28" Margin="214,13,14,13"/>
+                <TextBox x:Name="tbField" Grid.Row="8" Width="650" Height="40" FontFamily="Bahnschrift" FontSize="28" Margin="214,13,14,13"/>
 
 
                 <TextBlock x:Name="tblDescription" Text="Description" Grid.Row="9" FontFamily="Bahnschrift" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Left"/>

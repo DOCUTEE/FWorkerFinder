@@ -22,34 +22,42 @@ namespace FWorker
     /// </summary>
     public partial class ApplyJob : Page
     {
+        private string id;
         private Worker worker;
-        
-        public ApplyJob(Worker worker)
+        private WorkerDAO workerDAO;
+
+        public ApplyJob(string id)
         {
             InitializeComponent();
-            this.worker = worker;
+            this.id = id;
+            this.workerDAO = new WorkerDAO();
+            this.worker = workerDAO.GetWorker(this.id);
 
-            
             lbId.Content = worker.Id;
             tbCitizenID.Text = worker.CitizenID;
             tbName.Text = worker.Name;
             tbGender.Text = worker.Gender;
-            tbBirth.Text = worker.Name.ToString();
+            tbBirth.Text = worker.Birth.ToString();
             tbAddress.Text = worker.Address;
             tbEmail.Text = worker.Email;
+            tbQualifications.Text = worker.Qualifications;
             tbNumber.Text = worker.PhoneNumber;
+            tbDescription.Text = worker.Description;
+            tbField.Text = worker.Field;
+            tbPricePerHour.Text = worker.PricePerHour.ToString();
 
-            string path1 = Environment.CurrentDirectory;
 
-            string path = Directory.GetParent(path1).Parent.Parent.FullName + "\\" + worker.Logo;
-            imgWorker.Source = new BitmapImage(new Uri(path));
+            imgWorker.Source = new BitmapImage(new Uri(this.worker.Logo));
+
+
+
 
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
 
-           
+
         }
 
         private void Edit_Click(object sender, RoutedEventArgs e)

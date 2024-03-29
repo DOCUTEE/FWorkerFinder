@@ -73,6 +73,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 <!-- <<<<<<< ShowInfo-Quang
             <Grid Grid.Column="1">
@@ -84,6 +85,8 @@
         </Grid> -->
             <Button x:Name="Edit" Width="160" Height="60" Content="Edit" FontFamily="Bahnschrift" FontSize="28" Click="Edit_Click"/>
             <Button x:Name="ApplyJob" Grid.Column="1" Width="160" Height="60" Content="Apply Job" FontFamily="Bahnschrift" FontSize="28" Click="ApplyJob_Click"/>
+            <Button x:Name="LikedWorks" Grid.Column="2" Width="160" Height="60" Content="Đã thích" FontFamily="Bahnschrift" FontSize="28" Click="LikedWorks_Click"/>
+
         </Grid>
 
 

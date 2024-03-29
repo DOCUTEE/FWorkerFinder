@@ -34,13 +34,13 @@ namespace FWorker
 
             Grid temp1 = new Grid();
             Grid.SetRow(temp1, 1);
-            UCHistory uCHistory1 = new UCHistory(1);
+            UCHistory uCHistory1 = new UCHistory(2);
             temp1.Children.Add(uCHistory1);
             historyContainer.Children.Add(temp1);
 
             Grid temp2 = new Grid();
             Grid.SetRow(temp2, 2);
-            UCHistory uCHistory2 = new UCHistory(1);
+            UCHistory uCHistory2 = new UCHistory(3);
             temp2.Children.Add(uCHistory2);
             historyContainer.Children.Add(temp2);
         }

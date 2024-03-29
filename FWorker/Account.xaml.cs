@@ -52,26 +52,19 @@ namespace FWorker
 
         private void ApplyJob_Click(object sender, RoutedEventArgs e)
         {
-            //ApplyJob applyJob = new ApplyJob()
-            //Uri uri = new Uri("ApplyJob.xaml", UriKind.Relative);
-            //this.NavigationService.Navigate(uri);
-            //return 
 
-            Worker worker = new Worker(
-                this.customer.Id, this.customer.Name, this.customer.Gender, this.customer.Birth, 
-                this.customer.PhoneNumber, this.customer.Address, this.customer.Email,
-                this.customer.CitizenID, this.customer.Logo, 0, null, null, null, 0);
-         
+            //Worker worker = new Worker(
+            //    this.customer.Id, this.customer.Name, this.customer.Gender, this.customer.Birth, 
+            //    this.customer.PhoneNumber, this.customer.Address, this.customer.Email,
+            //    this.customer.CitizenID, this.customer.Logo, 0, null, null, null, 0);
+
 
             MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
-            Grid mainContainer = (Grid)mainWindow.FindName("gridContext");
-            mainContainer.Children.Clear();
-            Frame frame = new Frame();
-            frame.Content = new ApplyJob(worker);
-            mainContainer.Children.Add(frame);
+            Frame mainContainer = (Frame)mainWindow.FindName("gridContext");
+            mainContainer.NavigationService.Navigate(new ApplyJob(this.customer.Id));
         }
 
-        private void Liked_Click(object sender, RoutedEventArgs e)
+        private void LikedWorks_Click(object sender, RoutedEventArgs e)
         {
             MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
             Frame mainContain = (Frame)mainWindow.FindName("gridContext");

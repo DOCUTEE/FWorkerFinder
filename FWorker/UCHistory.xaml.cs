@@ -47,7 +47,7 @@ namespace FWorker
             c.Read();
             string path = Environment.CurrentDirectory;
             string path2 = Directory.GetParent(path).Parent.Parent.FullName + "\\" + c.GetString(0);
-            //workImage.Source = new BitmapImage(new Uri(path2));
+            workImage.Source = new BitmapImage(new Uri(path2));
             
             dbConn.Conn.Close();         
         }

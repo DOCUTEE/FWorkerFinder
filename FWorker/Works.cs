@@ -14,7 +14,7 @@ namespace FWorker
         private string number;
         private string locate;
         private string request;
-        private string problemIm age;
+        private string problemImage;
 
         public Works(int worksID, string name, string number, string locate, string request, string problemImage)
         {
