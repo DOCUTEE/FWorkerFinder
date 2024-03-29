@@ -119,3 +119,23 @@ C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWork
 C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ref\FWorker.dll
 C:\Users\quoct\source\repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\UCHistory.g.cs
 C:\Users\quoct\source\repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\UCHistory.baml
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.csproj.AssemblyReference.cache
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Account.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Booking.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ButtonSideBar.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\CustomerService.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\History.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\HomeScreen.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ServiceCard.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Tips.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\UCHistory.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerButton.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerInfo.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerList.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\App.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker_MarkupCompile.cache
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker_MarkupCompile.lref
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.dll
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\refint\FWorker.dll
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.pdb

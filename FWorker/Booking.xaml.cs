@@ -20,24 +20,17 @@ namespace FWorker
     /// </summary>
     public partial class Booking : Page
     {
+
         public Booking()
         {
             InitializeComponent();
         }
 
-        private void txtCustomerName_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
+            Works works = new Works(0, txtCustomerName.Text, txtPhoneNumber.Text, txtAddress.Text, txtProblem.Text, "");
+            WorksDAO worksDAO = new WorksDAO();
+            worksDAO.Add("WORKS", works);
         }
     }
 }

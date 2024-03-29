@@ -45,42 +45,17 @@ VALUES
 
 
 
-   CREATE TABLE WORKED (
-    worksID INT IDENTITY(1,1) PRIMARY KEY,
-    workerID INT,
-    customerID INT,
-    rating FLOAT(53),
-    comment TEXT,
-    replyImage VARCHAR(255),
-);
+ CREATE TABLE [dbo].[WORKS] (
+    worksID int IDENTITY(1,1) primary key,
+    name varchar(256) NULL,
+    number varchar(256) NULL,
+    locate varchar(256) NULL,
+    request text NULL,
+    problemImage varchar(256) NULL
+ )
+ INSERT INTO WORKS (name, number, locate, request, problemImage) values 
+    ('Huy', '01', 'aaa', 'bbb', 'cc'),
+    ('Tuong', '01', 'aaa', 'bbb', 'cc')
 
-INSERT INTO WORKED (workerID, customerID, rating, comment, replyImage)
-VALUES 
-    (1, 6, 4.5, 'Good job!','Worked Problem/Worked1.jpg'),
-    (2, 7, 4.7, 'Could be better.', 'Worked Problem/Worked2.jpg'),
-    (3, 8, 4.2, 'Excellent service!', 'Worked Problem/Worked3.jpg'),
-    (4, 9, 4.9, 'Disappointed with the result.', 'Worked Problem/Worked4.jpg'),
-    (5, 10, 4.6, 'Satisfactory work.', 'Worked Problem/Worked5.jpg');
-
-select * from WORKED
-drop table WORKED
-
-CREATE TABLE WORKS (
-    worksID INT IDENTITY(1,1) PRIMARY KEY,
-    name VARCHAR(255),
-    number VARCHAR(255),
-    locate VARCHAR(255),
-    requestField VARCHAR(255),
-    requestWorker VARCHAR(255),
-    price FLOAT(53),
-    describeProblem TEXT,
-    problemImage VARCHAR(255)
-);
-INSERT INTO WORKS (name, number, locate, requestField, requestWorker, price, describeProblem, problemImage)
-VALUES
-    ('HUY', '0123456789', '123 Main Street, City, Country', 'Electrical', 'Experienced electrician required', 50.00, 'Need assistance with wiring installation.', 'Problem Image/Problem1.jpg'),
-    ('Quang', '9876543210', '456 Elm Street, City, Country', 'Plumbing', 'Plumber with pipe repair expertise needed', 60.00, 'Leakage in kitchen sink pipe.', 'Problem Image/Problem2.jpg'),
-    ('Tuong', '1112223333', '789 Oak Street, City, Country', 'HVAC', 'Experienced HVAC technician required', 70.00, 'Air conditioner not cooling properly.', 'Problem Image/Problem3.jpg'),
-    ('Thinh', '4445556666', '321 Pine Street, City, Country', 'Carpentry', 'Skilled carpenter needed for furniture repair', 80.00, 'Repair broken chair leg.', 'Problem Image/Problem4.jpg'),
-    ('Hy', '7778889999', '987 Maple Street, City, Country', 'Painting', 'Professional painter required for interior paint job', 90.00, 'Need to repaint living room walls.', 'Problem Image/Problem5.jpg');
-select * from WORKS
+ Select * from WORKS
+ Drop table WORKS
