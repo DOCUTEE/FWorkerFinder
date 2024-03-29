@@ -24,3 +24,15 @@ VALUES
     ('8', 'Samantha Taylor', 'Female', '1987-07-12', '999000111', '741 Birch Street, City, Country', 'samantha.taylor@example.com', '9990001112', 'Profile\logo8.png'),
     ('9', 'Christopher Clark', 'Male', '1983-11-08', '333444555', '369 Oakwood Street, City, Country', 'christopher.clark@example.com', '3334445558', 'Profile\logo9.png'),
     ('10', 'Amanda Hall', 'Female', '1998-04-22', '111222333', '159 Cedarwood Street, City, Country', 'amanda.hall@example.com', '1112223334', 'Profile\logo10.png');
+
+INSERT INTO [dbo].[CUSTOMER] ([id], [name], [gender], [birth], [phoneNumber], [address], [email], [citizenID], [logo])
+VALUES
+    ('11', 'Matthew Turner', 'Male', '1986-10-07', '777888999', '963 Oakwood Street, City, Country', 'matthew.turner@example.com', '7778889991', 'Profile\logo11.png'),
+    ('12', 'Olivia Garcia', 'Female', '1991-02-14', '888999000', '258 Elmwood Street, City, Country', 'olivia.garcia@example.com', '8889990005', 'Profile\logo12.png'),
+    ('13', 'Ryan Martinez', 'Male', '1984-05-29', '333444555', '741 Pinecrest Street, City, Country', 'ryan.martinez@example.com', '3334445551', 'Profile\logo13.png'),
+    ('14', 'Sophia Adams', 'Female', '1990-08-18', '555666777', '852 Maplewood Street, City, Country', 'sophia.adams@example.com', '5556667772', 'Profile\logo14.png'),
+    ('15', 'Ethan Hernandez', 'Male', '1982-12-11', '222333444', '369 Birchwood Street, City, Country', 'ethan.hernandez@example.com', '2223334448', 'Profile\logo15.png'),
+    ('16', 'Isabella Scott', 'Female', '1987-03-27', '444555666', '159 Cedarcrest Street, City, Country', 'isabella.scott@example.com', '4445556663', 'Profile\logo16.png'),
+    ('17', 'Alexander Nguyen', 'Male', '1995-06-05', '666777888', '963 Pinecrest Street, City, Country', 'alexander.nguyen@example.com', '6667778884', 'Profile\logo17.png'),
+    ('18', 'Mia Roberts', 'Female', '1989-09-30', '999000111', '258 Elm Street, City, Country', 'mia.roberts@example.com', '9990001115', 'Profile\logo18.png'),
+    ('19', 'William Wilson', 'Male', '1981-01-14', '111222333', '741 Birchwood Street, City, Country', 'william.wilson@example.com', '1112223337', 'Profile\logo19.png')

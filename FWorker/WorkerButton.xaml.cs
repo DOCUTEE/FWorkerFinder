@@ -29,6 +29,7 @@ namespace FWorker
             InitializeComponent();
             string path = Environment.CurrentDirectory;
             string path2 = Directory.GetParent(path).Parent.Parent.FullName + "\\" + worker.Logo;
+            //MessageBox.Show(worker.Logo);
             imgWorker.Source = new BitmapImage(new Uri(path2));
             imgWorker.Height = 180;
             workerName.Content = worker.Name;

@@ -45,9 +45,11 @@ namespace FWorker
             tbDescription.Text = worker.Description;
             tbField.Text = worker.Field;
             tbPricePerHour.Text = worker.PricePerHour.ToString();
+            string path = Environment.CurrentDirectory;
+            string path2 = Directory.GetParent(path).Parent.Parent.FullName + "\\" + this.worker.Logo;
+            imgWorker.Source = new BitmapImage(new Uri(path2));
 
-
-            imgWorker.Source = new BitmapImage(new Uri(this.worker.Logo));
+           
 
 
 
@@ -71,7 +73,7 @@ namespace FWorker
             worker.Address = tbAddress.Text;
             worker.Email = tbEmail.Text;
             worker.CitizenID = tbCitizenID.Text;
-            worker.Logo = imgWorker.Source.ToString();
+            worker.Logo = this.worker.Logo;
             worker.Description = tbDescription.Text;
             worker.Qualifications = tbQualifications.Text;
             worker.Field = tblField.Text;

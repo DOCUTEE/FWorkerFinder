@@ -58,10 +58,10 @@ namespace FWorker
             int cnt = 0;
             while (sqlDataReader.Read())
             {
-                cnt++;
+                //cnt++;
                 string id = sqlDataReader.GetString(0);
                 WorkerDAO workerDAO = new WorkerDAO();
-                MessageBox.Show(cnt.ToString());
+                //MessageBox.Show(cnt.ToString());
                 Worker worker = workerDAO.GetWorker(id);
                 workers.Add(worker);
             }
