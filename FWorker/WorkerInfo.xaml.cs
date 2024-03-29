@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -22,6 +21,7 @@ namespace FWorker
     public partial class WorkerInfo : Page
     {
         Worker worker;
+        LikedWorkerDAO likedWorkerDAO = new LikedWorkerDAO();
         public WorkerInfo()
         {
             InitializeComponent();
@@ -48,12 +48,12 @@ namespace FWorker
             tblGender.Text = worker.Gender;
             tblBirth.Text = worker.Birth.ToString();
             tblDescription.Text = worker.Description;
-        
+            string bookmarkPath = Directory.GetParent(path).Parent.Parent.FullName + "\\Logo\\";
+            if (likedWorkerDAO.IsExisting("1", this.worker.Id)) bookmarkPath += "HeartRed.png";
+            else bookmarkPath += "HeartBlank.png";
+            BookmarkIcon.Source = new BitmapImage(new Uri(bookmarkPath));
+            likedWorkerDAO.DbConn.Conn.Close();
         }
-    
-
-       
-
         private void btnInfo_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             containerDescription.Visibility = Visibility.Hidden;
@@ -64,6 +64,28 @@ namespace FWorker
         {
             containerDescription.Visibility = Visibility.Visible;
             containerInfo.Visibility = Visibility.Hidden;
+        }
+
+        private void BookmarkIcon_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            string path = Environment.CurrentDirectory;
+            string bookmarkPath = Directory.GetParent(path).Parent.Parent.FullName + "\\Logo\\";
+            //MessageBox.Show("OKEEE");
+            
+            if (likedWorkerDAO.IsExisting("1", this.worker.Id))
+            {
+                likedWorkerDAO.DbConn.Conn.Close();
+                likedWorkerDAO.Remove(this.worker.Id);
+                bookmarkPath += "HeartBlank.png";
+
+            }
+            else
+            {
+                likedWorkerDAO.DbConn.Conn.Close();
+                likedWorkerDAO.Add(this.worker.Id);
+                bookmarkPath += "HeartRed.png";
+            }
+            BookmarkIcon.Source = new BitmapImage(new Uri(bookmarkPath));
         }
     }
 }

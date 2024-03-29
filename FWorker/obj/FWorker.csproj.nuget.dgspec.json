@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Window\\back up\\FWorkerFinder\\FWorker\\FWorker.csproj": {}
+    "D:\\Window\\back up 2\\FWorkerFinder\\FWorker\\FWorker.csproj": {}
   },
   "projects": {
-    "D:\\Window\\back up\\FWorkerFinder\\FWorker\\FWorker.csproj": {
+    "D:\\Window\\back up 2\\FWorkerFinder\\FWorker\\FWorker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Window\\back up\\FWorkerFinder\\FWorker\\FWorker.csproj",
+        "projectUniqueName": "D:\\Window\\back up 2\\FWorkerFinder\\FWorker\\FWorker.csproj",
         "projectName": "FWorker",
-        "projectPath": "D:\\Window\\back up\\FWorkerFinder\\FWorker\\FWorker.csproj",
+        "projectPath": "D:\\Window\\back up 2\\FWorkerFinder\\FWorker\\FWorker.csproj",
         "packagesPath": "C:\\Users\\quoct\\.nuget\\packages\\",
-        "outputPath": "D:\\Window\\back up\\FWorkerFinder\\FWorker\\obj\\",
+        "outputPath": "D:\\Window\\back up 2\\FWorkerFinder\\FWorker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\quoct\\AppData\\Roaming\\NuGet\\NuGet.Config",

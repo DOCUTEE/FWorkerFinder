@@ -48,7 +48,7 @@ namespace FWorker
                 SqlCommand cmd = new SqlCommand(sqlStr, Conn);
                 if (cmd.ExecuteNonQuery() > 0)
                 {
-                    MessageBox.Show("Thành công");
+                    MessageBox.Show("Success");
                 }
             }
             catch (Exception exc)
@@ -70,30 +70,44 @@ namespace FWorker
 
             // Mở kết nối trước khi thực thi câu truy vấn
             Conn.Open();
+           
+            return cmd.ExecuteReader();
+        }
+//         public SqlDataReader GetReader1(string sqlStr, SqlParameter parameter)
+//         {
+// <<<<<<< ShowInfo-Quang
+//             try
+//             {
+//                 Conn.Open();
+//                 SqlCommand cmd = new SqlCommand(sqlStr, Conn);
+//                 if (cmd.ExecuteNonQuery() > 0)
+//                 {
+//                     MessageBox.Show(successMessage);
+//                 }
+//             }
+//             catch (Exception ex)
+//             {
+//                 MessageBox.Show("Thất bại: " + ex.Message);
+//             }
+//             finally
+//             {
+//                 Conn.Close();
+//             }
+//         }
+        public SqlDataReader GetReader1(string sqlStr, SqlParameter parameter)
+        {
+            // Tạo một đối tượng SqlCommand để thực thi câu truy vấn
+            SqlCommand cmd = new SqlCommand(sqlStr, conn);
+            // Thêm tham số vào đối tượng SqlCommand
+            cmd.Parameters.Add(parameter);
+
+            // Mở kết nối trước khi thực thi câu truy vấn
+            Conn.Open();
 
             // Thực thi câu truy vấn và trả về SqlDataReader
             return cmd.ExecuteReader();
         }
 
-        public void AdapterExecute(string sqlStr, string successMessage)
-        {
-            try
-            {
-                Conn.Open();
-                SqlCommand cmd = new SqlCommand(sqlStr, Conn);
-                if (cmd.ExecuteNonQuery() > 0)
-                {
-                    MessageBox.Show(successMessage);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Thất bại: " + ex.Message);
-            }
-            finally
-            {
-                Conn.Close();
-            }
-        }
+
     }
 }

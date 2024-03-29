@@ -57,11 +57,8 @@ namespace FWorker
         private void borderServiceCard_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             MainWindow mainWindow = (MainWindow)Application.Current.MainWindow;
-            Grid mainContainer = (Grid)mainWindow.FindName("gridContext");
-            mainContainer.Children.Clear();
-            Frame frame = new Frame();
-            frame.Content = new WorkerList(cardName);
-            mainContainer.Children.Add(frame);
+            Frame mainContainer = (Frame)mainWindow.FindName("gridContext");
+            mainContainer.Content = new WorkerList(cardName);
         }
     }
 }

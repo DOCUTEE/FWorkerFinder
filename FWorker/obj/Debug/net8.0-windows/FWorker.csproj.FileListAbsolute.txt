@@ -62,66 +62,63 @@ C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\r
 C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Docute\Desktop\FINALUI\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.exe
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.dll.config
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.deps.json
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.runtimeconfig.json
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.pdb
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.csproj.AssemblyReference.cache
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Account.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Booking.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ButtonSideBar.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\CustomerService.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\History.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\HomeScreen.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\MainWindow.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ServiceCard.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Tips.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerButton.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerInfo.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerList.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker_MarkupCompile.cache
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker_MarkupCompile.lref
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Account.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Booking.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ButtonSideBar.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\CustomerService.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\History.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\HomeScreen.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\MainWindow.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ServiceCard.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Tips.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerButton.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerInfo.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerList.baml
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.g.resources
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.AssemblyInfoInputs.cache
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.AssemblyInfo.cs
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.csproj.CoreCompileInputs.cache
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.sourcelink.json
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.csproj.Up2Date
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\refint\FWorker.dll
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.pdb
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.genruntimeconfig.cache
-C:\Users\quoct\Source\Repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ref\FWorker.dll
-C:\Users\quoct\source\repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\UCHistory.g.cs
-C:\Users\quoct\source\repos\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\UCHistory.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.exe
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.dll.config
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.deps.json
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.runtimeconfig.json
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\FWorker.pdb
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\bin\Debug\net8.0-windows\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.csproj.AssemblyReference.cache
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Account.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Booking.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ButtonSideBar.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\CustomerService.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\History.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\HomeScreen.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ServiceCard.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Tips.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerButton.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerInfo.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerList.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker_MarkupCompile.cache
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker_MarkupCompile.lref
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Account.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Booking.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ButtonSideBar.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\CustomerService.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\History.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\HomeScreen.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ServiceCard.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Tips.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerButton.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerInfo.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerList.baml
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.g.resources
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.AssemblyInfoInputs.cache
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.AssemblyInfo.cs
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.csproj.CoreCompileInputs.cache
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.sourcelink.json
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.csproj.Up2Date
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\refint\FWorker.dll
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.pdb
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.genruntimeconfig.cache
+C:\Users\Docute\Desktop\TESTTT\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ref\FWorker.dll
 D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker.csproj.AssemblyReference.cache
-D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Account.g.cs
-D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Booking.g.cs
+D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ApplyJob.g.cs
 D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ButtonSideBar.g.cs
 D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\CustomerService.g.cs
 D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\History.g.cs
@@ -131,7 +128,6 @@ D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\ServiceCard.g
 D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\Tips.g.cs
 D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\UCHistory.g.cs
 D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerButton.g.cs
-D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerInfo.g.cs
 D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\WorkerList.g.cs
 D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\App.g.cs
 D:\Window\back up 2\FWorkerFinder\FWorker\obj\Debug\net8.0-windows\FWorker_MarkupCompile.cache

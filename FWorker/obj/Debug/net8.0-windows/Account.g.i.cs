@@ -41,6 +41,14 @@ namespace FWorker {
     /// </summary>
     public partial class Account : System.Windows.Controls.UserControl, System.Windows.Markup.IComponentConnector {
         
+        
+        #line 79 "..\..\..\Account.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.Button Liked;
+        
+        #line default
+        #line hidden
+        
         private bool _contentLoaded;
         
         /// <summary>
@@ -75,6 +83,15 @@ namespace FWorker {
             
             #line 19 "..\..\..\Account.xaml"
             ((System.Windows.Controls.TextBox)(target)).TextChanged += new System.Windows.Controls.TextChangedEventHandler(this.TextBox_TextChanged);
+            
+            #line default
+            #line hidden
+            return;
+            case 2:
+            this.Liked = ((System.Windows.Controls.Button)(target));
+            
+            #line 79 "..\..\..\Account.xaml"
+            this.Liked.Click += new System.Windows.RoutedEventHandler(this.Liked_Click);
             
             #line default
             #line hidden

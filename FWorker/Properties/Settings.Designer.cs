@@ -30,6 +30,8 @@ namespace FWorker.Properties {
         public string connStr {
             get {
                 //return ((string)(this["connStr"]));
+                return "Data Source=DOCUTE;Integrated Security=True;Connect Timeout=30;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+                //return ((string)(this["connStr"]));
                 return "Data Source=QUOCTHINH;Integrated Security=True;Connect Timeout=30;TrustServerCertificate=True";
             }
         }

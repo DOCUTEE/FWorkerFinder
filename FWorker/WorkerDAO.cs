@@ -11,25 +11,21 @@ namespace FWorker
 {
     internal class WorkerDAO : UserDAO
     {
-        public WorkerDAO(string tableName) : base(tableName) { }
-
         public WorkerDAO(): base("WORKERS")
         {
             
         }
 
-
-        public override void Add(string tableName, User user )
+        public override void Add(User user )
         {
             string sqlStr;
             Worker worker = (Worker)user;
-         
             while (true)
             {
                 sqlStr = string.Format("INSERT INTO {0} (id, name, gender, birth, phoneNumber, address, email ,citizenID, logo, rating, description, qualifications, field, pricePerHour)" +
-                    " VALUES('{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}', '{11}','{12}','{13}','{14}')",
-                    tableName, worker.Id, worker.Name, worker.Gender, worker.Birth, worker.PhoneNumber,  worker.Address, worker.Email, worker.CitizenID,
-                    worker.Rating, worker.Description, worker.Qualifications, worker.Field, worker.PricePerHour);
+                    " VALUES('{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}', '{11}','{12}','{13}')",
+                    this.tableName, worker.Id, worker.Name, worker.Gender, worker.Birth, worker.PhoneNumber,  worker.Address, worker.Email, worker.CitizenID,
+                    worker.Description, worker.Qualifications, worker.Field, worker.PricePerHour);
                 bool flag = worker.ValidateData();
                 if (!flag)
                 {
@@ -40,20 +36,21 @@ namespace FWorker
                     break;
             }
            
-            dbConn.AdapterExecute(sqlStr, "Sign Up Success");
+            dbConn.CommandExecute(sqlStr);
 
         }
 
-        public override void Edit(string tableName, User user)
+        public override void Edit(User user)
         {
             string sqlStr;
             Worker worker = (Worker)user;
 
             while (true)
             {
-                sqlStr = string.Format("UPDATE {0} SET name ='{1}', gender = '{2}', birth ='{3}', phoneNumber ='{4}', address '{5}', email ='{6}',citizenID ='{7}', logo ='{8}', rating ='{9}', description ='{10}', qualifications ='{11}', field ='{12}', pricePerHour = '{13}' WHERE id = '{14}'" +
-                    tableName, worker.Name, worker.Gender, worker.Birth, worker.PhoneNumber, worker.Address, worker.Email, worker.CitizenID,
-                    worker.Rating, worker.Description, worker.Qualifications, worker.Field, worker.PricePerHour, worker.Id);
+                sqlStr = string.Format("UPDATE {0} SET name ='{1}', gender = '{2}', birth ='{3}', phoneNumber ='{4}', address = '{5}', email ='{6}',citizenID ='{7}', logo ='{8}', description ='{9}', qualifications ='{10}', field ='{11}', pricePerHour = '{12}' WHERE id = '{13}'",
+                    this.tableName, worker.Name, worker.Gender, worker.Birth, worker.PhoneNumber, worker.Address, worker.Email, worker.CitizenID, worker.Logo, worker.Description, worker.Qualifications, worker.Field, worker.PricePerHour, worker.Id);
+
+
                 bool flag = worker.ValidateData();
                 if (!flag)
                 {
@@ -61,9 +58,10 @@ namespace FWorker
                     return;
                 }
                 else
-                    break;
+
+                break;
             }
-            dbConn .AdapterExecute(sqlStr, "Update successful");
+            dbConn .CommandExecute(sqlStr);
         }
 
         public DataTable Load()
@@ -80,8 +78,6 @@ namespace FWorker
 
             
             string sqlQuery = $"SELECT TOP {quantity} * FROM WORKERS WHERE field = '{service}'";
-            dbConn.CommandExecute(sqlQuery);
-            SqlParameter parameter = new SqlParameter();
 
             SqlDataReader reader = dbConn.GetReader(sqlQuery);
             while (reader.Read())
@@ -113,8 +109,6 @@ namespace FWorker
             List<Worker> workers = new List<Worker>();
             string sqlQuery = $"SELECT TOP {quantity} * FROM WORKERS";
             dbConn.CommandExecute(sqlQuery);
-            SqlParameter parameter = new SqlParameter();
-
             SqlDataReader reader = dbConn.GetReader(sqlQuery);         
             
             while (reader.Read())
@@ -144,36 +138,38 @@ namespace FWorker
 
 
 
-        //public Worker GetWorker(string iddd)
-        //{
-        //    Worker worker;
-            
-        //    string sqlQuery = "SELECT * FROM WORKERS WHERE id=@id";
-        //    SqlParameter paramId = new SqlParameter("@id", iddd);
+        public Worker GetWorker(string id)
+        {
+            Worker worker = new Worker();
+            string sqlQuery = "SELECT * FROM WORKERS WHERE id=@id";
 
-        //    SqlDataReader reader = dbConn.GetReader(sqlQuery, paramId);
+            SqlParameter paramId = new SqlParameter("@id", id);
 
+            SqlDataReader reader = dbConn.GetReader1(sqlQuery, paramId);
 
-        //    worker = new Worker(
-        //    id: reader.GetString(0),
-        //    name: reader.GetString(1),
-        //    gender: reader.GetString(2),
-        //    birth: reader.GetDateTime(3),
-        //    phoneNumber: reader.GetString(4),
-        //    address: reader.GetString(5),
-        //    email: reader.GetString(6),
-        //    citizenID: reader.GetString(7),
-        //    logo: reader.GetString(8),
-        //    rating: reader.GetDouble(9),
-        //    description: reader.GetString(10),
-        //    qualifications: reader.GetString(11),
-        //    field: reader.GetString(12),
-        //    pricePerHour: reader.GetDouble(13));
-                        
-                
-            
-        //    return worker;
-        //}
+            if (reader != null && reader.Read())
+            {
+                worker = new Worker(
+                    id: reader.GetString(0),
+                    name: reader.GetString(1),
+                    gender: reader.GetString(2),
+                    birth: reader.GetDateTime(3),
+                    phoneNumber: reader.GetString(4),
+                    address: reader.GetString(5),
+                    email: reader.GetString(6),
+                    citizenID: reader.GetString(7),
+                    logo: reader.GetString(8),
+                    rating: reader.GetDouble(9),
+                    description: reader.GetString(10),
+                    qualifications: reader.GetString(11),
+                    field: reader.GetString(12),
+                    pricePerHour: reader.GetDouble(13)
+                );
+            }
+            else
+                MessageBox.Show("Không tìm thấy khách hàng có ID: " + id);
+            return worker;
+        }
 
         public List<string> GetFieldValues(string fieldName, int quantity)
         {
@@ -186,7 +182,7 @@ namespace FWorker
             //SqlParameter parameter = new SqlParameter();
 
             SqlDataReader reader = dbConn.GetReader(sqlQuery);
-
+            
             while (reader.Read())
             {
                 string fieldValue = reader.GetString(0);
@@ -194,7 +190,6 @@ namespace FWorker
             }
 
             reader.Close();
-            
 
             return fieldValues;
         }
